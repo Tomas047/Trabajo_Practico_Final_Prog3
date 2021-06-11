@@ -1,5 +1,6 @@
 package com.company;
 
+import java.io.Serial;
 import java.util.*;
 
 /**
@@ -8,6 +9,7 @@ import java.util.*;
  * */
 
 public class Admin extends Usuario{
+    @Serial
     private static final long serialVersionUID = 1L;
 
     private Map<Torneo, ArrayList<DT>> torneoDeUsuarios = new HashMap<>();
