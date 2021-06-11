@@ -1,0 +1,80 @@
+package com.company;
+
+import com.company.Exceptions.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Map;
+
+public class ClubReal extends Club implements Serializable {
+    private static final long serialVersionUID = 1L;
+    private String nombre;
+
+    public ClubReal(String nombre, int maxJugadores){
+        super(maxJugadores);
+        this.nombre = nombre;
+    }
+
+    public ClubReal(String nombre, int maxJugadores, ClubReal equipo){
+        super(maxJugadores);
+        this.nombre = nombre;
+        super.listaJugadores.addAll(equipo.getListaJugadores());
+    }
+
+    ///Nombre -----------------------------
+    public String getNombre(){
+        return nombre;
+    }
+
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+
+    ///Jugadores Equipo -------------------
+    public ArrayList<Jugador> getListaJugadores() {
+        return listaJugadores;
+    }
+
+    ///Otros ------------------------------
+    /**
+     * Agrega un jugador al equipo
+     * @param a el nuevo jugador
+     * */
+    @Override
+    void addJugador(Jugador a) throws ExisteNombreException{
+        if(listaJugadores.contains(a))
+            throw new ExisteNombreException();
+        listaJugadores.add(a);
+    }
+
+    /**
+     * Se encarga de actualizar los datos
+     * @param datosJugador la informacion nueva
+     * */
+    void actualizar(Map<String, Jugador.Propiedades > datosJugador){
+        for(Jugador miJugador : listaJugadores){
+            miJugador.asignar(datosJugador.get(miJugador.getNombre()));
+        }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        ClubReal clubReal = (ClubReal) o;
+        return super.equals(o) && (nombre != null ? nombre.equals(clubReal.nombre) : clubReal.nombre == null);
+    }
+
+    @Override
+    public int hashCode() {
+        return nombre != null ? nombre.hashCode()*3 : 0;
+    }
+
+    @Override
+    public String toString() {
+        return nombre +"{"+ Arrays.toString(listaJugadores.toArray())+"}";
+    }
+
+    ///FALTAN METODOS WRITE & READ PARA ARCHIVOS
+}
