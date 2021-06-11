@@ -1,15 +1,17 @@
 package com.company;
 
-import java.io.IOException;
+import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 /**
  * Modela el Jugador de futbol de la vida real, el torneo real, con equipos reales
- * es administrador por el administrador
+ * es administrado por el administrador
  */
 
 public class Jugador implements Serializable {
     private final static int precioMinimo = 1000;
+    @Serial
     private static final long serialVersionUID = 1L;
     private String nombre;
     private int precio;
@@ -98,7 +100,7 @@ public class Jugador implements Serializable {
 
         Jugador jugador = (Jugador) o;
 
-        return nombre != null ? nombre.equals(jugador.nombre) : jugador.nombre == null;
+        return Objects.equals(nombre, jugador.nombre);
     }
 
     @Override
@@ -157,19 +159,13 @@ public class Jugador implements Serializable {
          * @param index el indice de la propiedad
          * @param propiedad el valor de la misma*/
         public void setPropiedad(int index, int propiedad){
-            switch (index){
-                case 0: goles = propiedad;
-                break;
-                case 1: golesPenal = propiedad;
-                break;
-                case 2: golesEnContra = propiedad;
-                break;
-                case 3: penalesAtajados = propiedad;
-                break;
-                case 4: tarjetasAmarilla = propiedad;
-                break;
-                case 5: tarjetasRoja = propiedad;
-                break;
+            switch (index) {
+                case 0 -> goles = propiedad;
+                case 1 -> golesPenal = propiedad;
+                case 2 -> golesEnContra = propiedad;
+                case 3 -> penalesAtajados = propiedad;
+                case 4 -> tarjetasAmarilla = propiedad;
+                case 5 -> tarjetasRoja = propiedad;
             }
         }
 
@@ -177,15 +173,15 @@ public class Jugador implements Serializable {
          * @param index el indice de la propiedad a retornar
          * @return entero con el valor de la misma*/
         public int getPropiedad(int index){
-            switch (index) {
-                case 0: return goles;
-                case 1: return golesPenal;
-                case 2: return golesEnContra;
-                case 3: return penalesAtajados;
-                case 4: return tarjetasAmarilla;
-                case 5: return tarjetasRoja;
-            }
-            return 0;
+            return switch (index) {
+                case 0 -> goles;
+                case 1 -> golesPenal;
+                case 2 -> golesEnContra;
+                case 3 -> penalesAtajados;
+                case 4 -> tarjetasAmarilla;
+                case 5 -> tarjetasRoja;
+                default -> 0;
+            };
         }
 
         /**
@@ -193,12 +189,12 @@ public class Jugador implements Serializable {
          * @return entero con el valor*/
         public int calcularPuntos(){
             int total = 0;
-            total += Valores.goles.getValor();
-            total += Valores.golesPenal.getValor();
-            total += Valores.golesEnContra.getValor();
-            total += Valores.penalAtajado.getValor();
-            total += Valores.tarjetaAmarilla.getValor();
-            total += Valores.tarjetaRoja.getValor();
+            total += Valores.goles.getValor() * goles;
+            total += Valores.golesPenal.getValor() * golesPenal;
+            total += Valores.golesEnContra.getValor() * golesEnContra;
+            total += Valores.penalAtajado.getValor() * penalesAtajados;
+            total += Valores.tarjetaAmarilla.getValor() * tarjetasAmarilla;
+            total += Valores.tarjetaRoja.getValor() * tarjetasAmarilla;
 
             return total;
         }
@@ -239,7 +235,7 @@ public class Jugador implements Serializable {
             if (golesEnContra != that.golesEnContra) return false;
             if (tarjetasAmarilla != that.tarjetasAmarilla) return false;
             if(tarjetasRoja != that.tarjetasRoja) return false;
-            return tarjetasRoja == that.tarjetasRoja;
+            return true;
         }
 
         @Override
