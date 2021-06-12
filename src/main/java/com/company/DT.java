@@ -2,6 +2,8 @@ package com.company;
 
 import com.company.Exceptions.*;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.Map;
 
 /**
@@ -102,5 +104,17 @@ public class DT extends Usuario{
         return resultado;
     }
 
-    ///FALTAN METODOS DE WRITE & READ PARA ARCHIVOS
+    private void escribirArchivo(ObjectOutputStream out) throws IOException{
+        out.defaultWriteObject();
+        out.writeUTF(nombre);
+        out.writeObject(presupuesto);
+        out.writeObject(adminEquipo);
+    }
+
+    private void leerArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+        ois.defaultReadObject();
+        nombre = ois.readUTF();
+        presupuesto = (Presupuesto) ois.readObject();
+        adminEquipo = (AdministracionEquipo)ois.readObject();
+    }
 }

@@ -1,6 +1,10 @@
 package com.company;
 
 import com.company.Exceptions.*;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -76,5 +80,15 @@ public class ClubReal extends Club implements Serializable {
         return nombre +"{"+ Arrays.toString(listaJugadores.toArray())+"}";
     }
 
-    ///FALTAN METODOS WRITE & READ PARA ARCHIVOS
+    private void leerArchivo(ObjectOutputStream out)throws IOException {
+        out.defaultWriteObject();
+        out.writeUTF(nombre);
+        out.writeObject(listaJugadores);
+    }
+
+    private void escribirArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+        ois.defaultReadObject();
+        nombre = ois.readUTF();
+        listaJugadores = (ArrayList<Jugador>)ois.readObject();
+    }
 }

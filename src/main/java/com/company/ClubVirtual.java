@@ -1,5 +1,8 @@
 package com.company;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
@@ -40,5 +43,14 @@ public class ClubVirtual extends Club implements Serializable {
         return super.equals(aux);
     }
 
-    ///FALTAN METODOS WRITE & READ PARA ARCHIVOS
+    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeInt(puntos);
+    }
+
+    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        ois.defaultReadObject();
+        puntos = ois.readInt();
+    }
+
 }

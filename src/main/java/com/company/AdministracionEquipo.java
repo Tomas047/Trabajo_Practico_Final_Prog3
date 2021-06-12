@@ -88,5 +88,14 @@ public class AdministracionEquipo implements Serializable {
         }
     }
 
-    ///FALTAN METODOS READ & WRITE PARA ARCHIVOS
+	private void escribirArchivo(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeObject(equipos);
+    }
+
+    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        ois.defaultReadObject();
+        equipos = (Map<Torneo, ClubVirtual>) ois.readObject();
+    }
+
 }

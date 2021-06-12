@@ -1,5 +1,8 @@
 package com.company;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -129,6 +132,19 @@ public class Torneo implements Serializable {
         return nombre +"{"+ Arrays.toString(equipos.toArray()) + "}";
     }
 
-    ///Faltan metodos write & read para archivos
+    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeUTF(nombre);
+        out.writeInt(maxJugadores);
+        out.writeObject(equipos);
+    }
+
+    private void leerArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+        ois.defaultReadObject();
+        nombre = ois.readUTF();
+        maxJugadores = ois.readInt();
+        equipos = (ArrayList<ClubReal>) ois.readObject();
+    }
+
 
 }

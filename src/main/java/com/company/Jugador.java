@@ -1,7 +1,6 @@
 package com.company;
 
-import java.io.Serial;
-import java.io.Serializable;
+import java.io.*;
 import java.util.Objects;
 
 /**
@@ -117,7 +116,26 @@ public class Jugador implements Serializable {
                 "\nStatus para jugar: " + getStatus();
     }
 
-    ///FALTAN METODOS DE WRITE & READ PARA MANEJO DE ARCHIVOS
+    public void escribirArchivo(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeInt(propiedades.goles);
+        out.writeInt(propiedades.golesPenal);
+        out.writeInt(propiedades.penalesAtajados);
+        out.writeInt(propiedades.golesEnContra);
+        out.writeInt(propiedades.tarjetasAmarilla);
+        out.writeInt(propiedades.tarjetasRoja);
+    }
+
+    public void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException{
+        ois.defaultReadObject();
+       propiedades.goles = ois.readInt();
+       propiedades.golesPenal = ois.readInt();
+       propiedades.penalesAtajados = ois.readInt();
+       propiedades.golesEnContra = ois.readInt();
+       propiedades.tarjetasAmarilla = ois.readInt();
+      propiedades.tarjetasRoja  = ois.readInt();
+    }
+
 
     /**
      *Modela las propiedades del jugador, estos son acumulados a lo largo del torneo.
@@ -249,7 +267,7 @@ public class Jugador implements Serializable {
             return result;
         }
 
-        ///FALTAN METODOS DE WRITE & READ PARA ARCHIVOS
+
 
         /**
          * Encargado de contener los valores de cada propiedad*/

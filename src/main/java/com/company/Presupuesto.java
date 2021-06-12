@@ -1,6 +1,10 @@
 package com.company;
 
 import com.company.Exceptions.*;
+
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -59,5 +63,14 @@ public class Presupuesto implements Serializable {
         fondos.put(t, aux);
     }
 
-    ///FALTAN METODOS READ & WRITE PARA ARCHIVOS
+    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeObject(fondos);
+    }
+
+    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        ois.defaultReadObject();
+        fondos = (Map<Torneo, Integer>) ois.readObject();
+    }
+
 }
