@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.Complementos.Posicion;
 import com.company.Exceptions.ExisteNombreException;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("...");
 
-        Jugador ex = new Jugador("Rick Sanchez", 10,76,"ebrio","Atacante", new Jugador.Propiedades(1,0,0,0,0,0));
+        Jugador ex = new Jugador("Rick Sanchez", 10,76,"ebrio", Posicion.MEDIOCAMPISTA, new Jugador.Propiedades(1,0,0,0,0,0));
 
         DT ox = new DT ("Tomas Parant");
 
