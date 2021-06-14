@@ -132,14 +132,14 @@ public class Torneo implements Serializable {
         return nombre +"{"+ Arrays.toString(equipos.toArray()) + "}";
     }
 
-    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+    private void escribirObjeto(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
         out.writeUTF(nombre);
         out.writeInt(maxJugadores);
         out.writeObject(equipos);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+    private void leerObjeto(ObjectInputStream ois) throws IOException,ClassNotFoundException{
         ois.defaultReadObject();
         nombre = ois.readUTF();
         maxJugadores = ois.readInt();

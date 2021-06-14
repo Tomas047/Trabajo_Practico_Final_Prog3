@@ -43,12 +43,12 @@ public class ClubVirtual extends Club implements Serializable {
         return super.equals(aux);
     }
 
-    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+    private void escribirObjeto(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
         out.writeInt(puntos);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException {
         ois.defaultReadObject();
         puntos = ois.readInt();
     }

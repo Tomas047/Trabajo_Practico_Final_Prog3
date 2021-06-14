@@ -63,12 +63,12 @@ public class Presupuesto implements Serializable {
         fondos.put(t, aux);
     }
 
-    private void escribirArchivo(ObjectOutputStream out) throws IOException {
+    private void escribirObjeto(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
         out.writeObject(fondos);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException {
         ois.defaultReadObject();
         fondos = (Map<Torneo, Integer>) ois.readObject();
     }

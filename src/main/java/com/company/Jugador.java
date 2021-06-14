@@ -116,26 +116,19 @@ public class Jugador implements Serializable {
                 "\nStatus para jugar: " + getStatus();
     }
 
-    public void escribirArchivo(ObjectOutputStream out) throws IOException {
+    private void escribirObjeto(ObjectOutputStream out) throws IOException{
         out.defaultWriteObject();
-        out.writeInt(propiedades.goles);
-        out.writeInt(propiedades.golesPenal);
-        out.writeInt(propiedades.penalesAtajados);
-        out.writeInt(propiedades.golesEnContra);
-        out.writeInt(propiedades.tarjetasAmarilla);
-        out.writeInt(propiedades.tarjetasRoja);
+        out.writeUTF(nombre);
+        out.writeInt(precio);
+        out.writeObject(propiedades);
     }
 
-    public void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException{
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException{
         ois.defaultReadObject();
-       propiedades.goles = ois.readInt();
-       propiedades.golesPenal = ois.readInt();
-       propiedades.penalesAtajados = ois.readInt();
-       propiedades.golesEnContra = ois.readInt();
-       propiedades.tarjetasAmarilla = ois.readInt();
-      propiedades.tarjetasRoja  = ois.readInt();
+        nombre = ois.readUTF();
+        precio = ois.readInt();
+        propiedades = (Propiedades) ois.readObject();
     }
-
 
     /**
      *Modela las propiedades del jugador, estos son acumulados a lo largo del torneo.

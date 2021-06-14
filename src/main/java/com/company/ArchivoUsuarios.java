@@ -5,12 +5,12 @@ import java.io.*;
 /**
  * Se ocupa de guardar la inforacion del Juego*/
 
-class ArchivosUsuario{
+class ArchivoUsuarios{
 
     /**Busca la ruta donde esta guardado el archivo
      * devuelve la ruta del directorio*/
     private static String obtenerrutadirect() {
-        File rutadirectorio = new File("src/resources");
+        File rutadirectorio = new File("src/main/resources");
         return rutadirectorio.getAbsoluteFile().toString();
     }
     /**

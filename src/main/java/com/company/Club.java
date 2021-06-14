@@ -69,12 +69,12 @@ public abstract class Club implements Serializable{
         }
         return true;
     }
-    private void escribirArchivo(ObjectOutputStream out)throws IOException {
+    private void escribirObjeto(ObjectOutputStream out)throws IOException {
         out.defaultWriteObject();
         out.writeObject(listaJugadores);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+    private void leerObjeto(ObjectInputStream ois) throws IOException,ClassNotFoundException{
         ois.defaultReadObject();
         listaJugadores = (ArrayList<Jugador>)ois.readObject();
     }

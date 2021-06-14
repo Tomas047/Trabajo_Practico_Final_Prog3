@@ -1,7 +1,7 @@
 package com.company;
 
 import com.company.Complementos.Posicion;
-import com.company.Exceptions.ExisteNombreException;
+//import com.company.Exceptions.ExisteNombreException;
 
 import java.util.ArrayList;
 
@@ -16,11 +16,11 @@ public class Main {
 
         ClubReal clubi = new ClubReal("Atletico Noobs", 20);
 
-        try {
+        /*try {
             clubi.addJugador(ex);
         } catch (ExisteNombreException e) {
             e.printStackTrace();
-        }
+        }*/
 
         ArrayList<Jugador> listi  = clubi.getListaJugadores();
 
@@ -29,7 +29,6 @@ public class Main {
         for (Jugador e: listi) {
             System.out.println(e.toString());
         }
-
 
     }
 }

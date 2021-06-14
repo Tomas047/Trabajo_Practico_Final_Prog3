@@ -88,12 +88,12 @@ public class AdministracionEquipo implements Serializable {
         }
     }
 
-	private void escribirArchivo(ObjectOutputStream out) throws IOException {
+	private void escribirObjeto(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
         out.writeObject(equipos);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException {
         ois.defaultReadObject();
         equipos = (Map<Torneo, ClubVirtual>) ois.readObject();
     }

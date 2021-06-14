@@ -80,13 +80,13 @@ public class ClubReal extends Club implements Serializable {
         return nombre +"{"+ Arrays.toString(listaJugadores.toArray())+"}";
     }
 
-    private void leerArchivo(ObjectOutputStream out)throws IOException {
+    private void leerObjeto(ObjectOutputStream out)throws IOException {
         out.defaultWriteObject();
         out.writeUTF(nombre);
         out.writeObject(listaJugadores);
     }
 
-    private void escribirArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+    private void escribirObjeto(ObjectInputStream ois) throws IOException,ClassNotFoundException{
         ois.defaultReadObject();
         nombre = ois.readUTF();
         listaJugadores = (ArrayList<Jugador>)ois.readObject();

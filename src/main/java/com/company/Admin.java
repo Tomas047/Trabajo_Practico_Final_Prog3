@@ -138,13 +138,13 @@ public class Admin extends Usuario{
         return "Administrator{" + "Nombre ='" + nombre + Arrays.toString(torneoDeUsuarios.keySet().toArray()) + '}';
     }
 
-   	private void escribirArchivo(ObjectOutputStream out) throws IOException {
+   	private void escribirObjeto(ObjectOutputStream out) throws IOException{
         out.defaultWriteObject();
         out.writeUTF(nombre);
         out.writeObject(torneoDeUsuarios);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException{
         ois.defaultReadObject();
         nombre = ois.readUTF();
         torneoDeUsuarios = (Map<Torneo, ArrayList<DT>>) ois.readObject();

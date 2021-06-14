@@ -104,14 +104,14 @@ public class DT extends Usuario{
         return resultado;
     }
 
-    private void escribirArchivo(ObjectOutputStream out) throws IOException{
+    private void escribirObjeto(ObjectOutputStream out) throws IOException{
         out.defaultWriteObject();
         out.writeUTF(nombre);
         out.writeObject(presupuesto);
         out.writeObject(adminEquipo);
     }
 
-    private void leerArchivo(ObjectInputStream ois) throws IOException,ClassNotFoundException{
+    private void leerObjeto(ObjectInputStream ois) throws IOException,ClassNotFoundException{
         ois.defaultReadObject();
         nombre = ois.readUTF();
         presupuesto = (Presupuesto) ois.readObject();
