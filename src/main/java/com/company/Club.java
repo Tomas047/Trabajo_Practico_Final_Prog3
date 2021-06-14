@@ -16,6 +16,9 @@ public abstract class Club implements Serializable{
     private int maxJugadores;
     ArrayList<Jugador> listaJugadores;
 
+    public Club(int maxJugadores){
+        this.maxJugadores = maxJugadores;
+    }
     public Club(int maxJugadores, ArrayList<Jugador> listaJugadores){
         this.maxJugadores = maxJugadores;
         this.listaJugadores = listaJugadores; ////MODIFICACION, AHORA NO LA CREA Y LA RECIBE DIRECTAMENTE

@@ -1,14 +1,18 @@
 package com.company;
 
 import com.company.Complementos.Posicion;
-import com.company.Exceptions.*;
-import java.util.List;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        ArrayList<ClubReal> listaDeClubes = new ArrayList<ClubReal>();
 
-        List<ArrayList> listaDeJugadores = new ArrayList<ArrayList> ();
        //BOCA
         ArrayList<Jugador> jugadoresBoca = new ArrayList<Jugador>();
 
@@ -548,30 +552,76 @@ public class Main {
         ClubReal godoyCruz = new ClubReal("Godoy Cruz", 23, jugadoresGodoyCruz);
         ClubReal aldosivi = new ClubReal("Godoy Cruz", 23, jugadoresAldosivi);
 
-        listaDeJugadores.add(jugadoresBoca);
-        listaDeJugadores.add(jugadoresVelez);
-        listaDeJugadores.add(jugadoresIndependiente);
-        listaDeJugadores.add(jugadoresTalleres);
-        listaDeJugadores.add(jugadoresLanus);
-        listaDeJugadores.add(jugadoresHuracan);
-        listaDeJugadores.add(jugadoresGimnasia);
-        listaDeJugadores.add(jugadoresPatronato);
-        listaDeJugadores.add(jugadoresDyJ);
-        listaDeJugadores.add(jugadoresNewells);
-        listaDeJugadores.add(jugadoresColon);
-        listaDeJugadores.add(jugadoresEstudiantes);
-        listaDeJugadores.add(jugadoresRiver);
-        listaDeJugadores.add(jugadoresRacing);
-        listaDeJugadores.add(jugadoresCasla);
-        listaDeJugadores.add(jugadoresBanfield);
-        listaDeJugadores.add(jugadoresArgentinos);
-        listaDeJugadores.add(jugadoresCentral);
-        listaDeJugadores.add(jugadoresGodoyCruz);
-        listaDeJugadores.add(jugadoresAldosivi);
+        listaDeClubes.add(boca);
+        listaDeClubes.add(river);
+        listaDeClubes.add(independiente);
+        listaDeClubes.add(racing);
+        listaDeClubes.add(estudiantes);
+        listaDeClubes.add(velez);
+        listaDeClubes.add(sanLorenzo);
+        listaDeClubes.add(rosarioCentral);
+        listaDeClubes.add(newells);
+        listaDeClubes.add(huracan);
+        listaDeClubes.add(argentinos);
+        listaDeClubes.add(aldosivi);
+        listaDeClubes.add(godoyCruz);
+        listaDeClubes.add(banfield);
+        listaDeClubes.add(patronato);
+        listaDeClubes.add(lanus);
+        listaDeClubes.add(gimnasia);
+        listaDeClubes.add(talleres);
+        listaDeClubes.add(defensayjusticia);
+        listaDeClubes.add(colon);
 
+        String path = "C:\\..."; ///Pasamos el directorio
 
+        File miArchi = new File(path);
 
+        if(!miArchi.exists()){
+            System.out.println("El archivo no existe pa, vamos a tener que crear uno");
+            miArchi.createNewFile();
+            System.out.println("Archivo " + miArchi.getName() + " creado con exito!\n");
+        }
 
+        if(miArchi.isDirectory()){
+            File[] fileList = miArchi.listFiles();
+
+            System.out.println("--- Lista de archivos de nuestro directorio ---");
+            for(File fichero : fileList){
+                System.out.println(fichero.getName());
+            }
+        } else {
+            /// MOSTRAMOS LOS DATOS DEL ARCHIVO
+            System.out.println("--- DATOS DEL ARCHIVO ---");
+            System.out.println("Nombre: " + miArchi.getName());
+            System.out.println("Ruta: " + miArchi.getPath());
+            System.out.println("Tamaño: (Bytes) " + miArchi.length());
+
+            Date lastUpdate = new Date(miArchi.lastModified());
+            System.out.println("Ultima modificacion: " + lastUpdate.toString());
+
+            FileWriter fWritter = new FileWriter(miArchi);
+            BufferedWriter bWritter = new BufferedWriter(fWritter);
+
+            if(!miArchi.canWrite()){
+                miArchi.setWritable(true);
+            }
+
+            System.out.println("\n --- ESCRIBIR ARCHIVO ---");
+            bWritter.write("Laboratorio 3");
+            bWritter.newLine();
+
+            ///FIN DE LA ESCRITURA EN EL ARCHIVO
+            System.out.println("Cerrando el buffer");
+            bWritter.close();
+        }
+
+       for(int i = 0; i <= listaDeClubes.size()-1; i++){
+           System.out.println("Club: " + listaDeClubes.get(i).getNombre());
+           for(int j = 0; j <= listaDeClubes.get(i).listaJugadores.size()-1; j++) {
+
+           }
+       }
 
 
 
