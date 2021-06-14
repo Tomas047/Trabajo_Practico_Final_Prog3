@@ -14,16 +14,17 @@ public class ClubReal extends Club implements Serializable {
     private static final long serialVersionUID = 1L;
     private String nombre;
 
-    public ClubReal(String nombre, int maxJugadores){
-        super(maxJugadores);
+    public ClubReal(String nombre, int maxJugadores, ArrayList<Jugador> listaJugadores){
+        super(maxJugadores, listaJugadores);
         this.nombre = nombre;
     }
 
+    /*
     public ClubReal(String nombre, int maxJugadores, ClubReal equipo){
         super(maxJugadores);
         this.nombre = nombre;
         super.listaJugadores.addAll(equipo.getListaJugadores());
-    }
+    }*/
 
     ///Nombre -----------------------------
     public String getNombre(){

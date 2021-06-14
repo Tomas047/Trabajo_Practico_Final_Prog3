@@ -1,6 +1,8 @@
 package com.company;
 
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Set;
@@ -118,17 +120,32 @@ public class AdministracionUsuarios implements Serializable{
         return usuarios;
     }
 
-    ///Manejo de archivos abajo (revisar)
-/*
-        public static void cargarCuentas() throws IOException, ClassNotFoundException{
-            usuarios = (ArrayList<Usuario>) ArchivoUsuarios.readFromFile("datos.temp");
-            if (usuarios == null)
-                usuarios = new ArrayList<>();
-        }
+    /** Carga los usuarios existentes al programa */
+    public static void cargarCuenta() throws IOException, ClassNotFoundException {
+        usuarios = (ArrayList<Usuario>) ArchivoUsuarios.leerArchivo("usuarios.txt");
+        if (usuarios == null)
+            usuarios = new ArrayList<>();
+    }
 
-        public static void save() throws IOException, ClassNotFoundException{
-            ArchivoUsuarios.writeToFile(usuarios,"datos.temp");
-        }
-*/
-    ///FALTA WRTITE & READ
+    /**
+     * Guarda la lista de usuario existente
+     * */
+    public static void guardarCuenta() throws IOException, ClassNotFoundException {
+        ArchivoUsuarios.escribirArchivo(usuarios,"usuarios.dat");
+    }
+    /**
+     * Metodo implementeados de la serializacion
+     * */
+    private void escribirObjeto(ObjectOutputStream out) throws IOException {
+        out.defaultWriteObject();
+        out.writeObject(usuarios);
+    }
+    /**
+     * Metodo implementeados de la serializacion
+     * */
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+        ois.defaultReadObject();
+        usuarios = (ArrayList<Usuario>)ois.readObject();
+    }
+
 }

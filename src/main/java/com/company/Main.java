@@ -1,34 +1,22 @@
 package com.company;
 
 import com.company.Complementos.Posicion;
-//import com.company.Exceptions.ExisteNombreException;
-
+import com.company.Exceptions.*;
+import java.util.List;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(".............");
+        System.out.println("...");
+
+        List<ArrayList> listaDeJugadores = new ArrayList<ArrayList> ();
+        ArrayList<Jugador> jugadoresBoca = new ArrayList<Jugador>();
 
         Jugador ex = new Jugador("Rick Sanchez", 10,76,"ebrio", Posicion.MEDIOCAMPISTA, new Jugador.Propiedades(1,0,0,0,0,0));
 
-        DT ox = new DT ("Tomas Parant");
+        ClubReal clubi = new ClubReal("Boca Juniors", 23, jugadoresBoca);
+        jugadoresBoca.add(ex);
 
-
-        ClubReal clubi = new ClubReal("Atletico Noobs", 20);
-
-        /*try {
-            clubi.addJugador(ex);
-        } catch (ExisteNombreException e) {
-            e.printStackTrace();
-        }*/
-
-        ArrayList<Jugador> listi  = clubi.getListaJugadores();
-
-        System.out.println("Miembros del equipo: \n");
-
-        for (Jugador e: listi) {
-            System.out.println(e.toString());
-        }
-
+        listaDeJugadores.add(jugadoresBoca);
     }
 }

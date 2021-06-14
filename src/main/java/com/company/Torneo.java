@@ -68,7 +68,7 @@ public class Torneo implements Serializable {
 
     public void addClub(ClubReal club){
         ///equipos.add(club);
-        equipos.add(new ClubReal(club.getNombre(), maxJugadores, club));
+        equipos.add(new ClubReal(club.getNombre(), maxJugadores, club.listaJugadores));
     }
 
     public boolean buscarClub(ClubReal club){
