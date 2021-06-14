@@ -15,17 +15,15 @@ public class Jugador implements Serializable {
     private String nombre;
     private int precio;
     private int edad;
-    private String status;
     private String posicion;
     private Propiedades propiedades;
 
     ///MIRAR TEMAS DE STATUS Y POSICION
 
-    public Jugador(String nombre, int precio, int edad, String status, String posicion, Propiedades propiedades){
+    public Jugador(String nombre, int precio, int edad, String posicion, Propiedades propiedades){
         this.nombre = nombre;
         this.precio = precio;
         this.edad = edad;
-        this.status = status;
         this.posicion = posicion;
         this.propiedades = propiedades;
     }
@@ -55,15 +53,6 @@ public class Jugador implements Serializable {
 
     public void setPrecio(int precio){
         this.precio = precio;
-    }
-
-    ///Status ------------------------------
-    public String getStatus(){
-        return status;
-    }
-
-    public void setStatus(String status){
-        this.status = status;
     }
 
     ///Posicion ----------------------------
@@ -112,8 +101,7 @@ public class Jugador implements Serializable {
         return getNombre() +
                 "\nPrecio: $" + getPrecio() +
                 "\nPosicion: " + getPosicion() +
-                "\nEdad: " + getEdad() +
-                "\nStatus para jugar: " + getStatus();
+                "\nEdad: " + getEdad();
     }
 
     private void escribirObjeto(ObjectOutputStream out) throws IOException{
