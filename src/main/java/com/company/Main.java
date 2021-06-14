@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("...");
+        System.out.println(".............");
 
         Jugador ex = new Jugador("Rick Sanchez", 10,76,"ebrio", Posicion.MEDIOCAMPISTA, new Jugador.Propiedades(1,0,0,0,0,0));
 
