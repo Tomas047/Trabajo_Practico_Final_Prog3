@@ -19,6 +19,7 @@ public abstract class Club implements Serializable{
     public Club(int maxJugadores){
         this.maxJugadores = maxJugadores;
     }
+
     public Club(int maxJugadores, ArrayList<Jugador> listaJugadores){
         this.maxJugadores = maxJugadores;
         this.listaJugadores = listaJugadores; ////MODIFICACION, AHORA NO LA CREA Y LA RECIBE DIRECTAMENTE
@@ -43,12 +44,10 @@ public abstract class Club implements Serializable{
      * Agrega un jugador al equipo
      * @param a  el nuevo jugador*/
     void addJugador(Jugador a) throws EquipoCompletoException, ExisteNombreException{
-        if(listaJugadores.size() <= maxJugadores){
+        if(listaJugadores.size() == maxJugadores)
             throw new EquipoCompletoException();
-        }
-        if(listaJugadores.contains(a)){
+        if(listaJugadores.contains(a))
             throw new ExisteNombreException();
-        }
         listaJugadores.add(a);
     }
 

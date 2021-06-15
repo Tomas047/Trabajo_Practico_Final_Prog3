@@ -16,7 +16,7 @@ import java.util.Map;
 public class Presupuesto implements Serializable {
     private static final long serialVersionUID = 1L;
     private Map<Torneo, Integer> fondos = new HashMap<>();
-    private static final int presupuestoInicial = 60000;
+    private static final int presupuestoInicial = 70000;
 
     /**
     * Método que determina si el usuario tiene suficientes fondos para comprar un jugador.
@@ -24,7 +24,7 @@ public class Presupuesto implements Serializable {
     * @param j
     * @return Si tiene suficientes fondos para comprar el jugador
     * */
-    public boolean consultarFondos(Torneo t, Jugador j){
+    public boolean consultarCompra(Torneo t, Jugador j){
         return fondos.get(t) >= j.getPrecio();
     }
 
@@ -46,7 +46,7 @@ public class Presupuesto implements Serializable {
      * @param j
      */
     public void comprar(Torneo t, Jugador j) throws FondoInsuficienteException{
-        if(!consultarFondos(t, j)) throw new FondoInsuficienteException();
+        if(!consultarCompra(t, j)) throw new FondoInsuficienteException();
         Integer aux = fondos.get(t);
         aux -= j.getPrecio();
         fondos.put(t, aux);

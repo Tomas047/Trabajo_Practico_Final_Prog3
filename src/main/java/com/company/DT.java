@@ -39,7 +39,7 @@ public class DT extends Usuario{
     /**
      * Método para comprar un jugador
      * @param t Representa el torneo.
-     * @param j Representa el jugador que quiere vender.
+     * @param j Representa el jugador que quiere comprar.
      */
     public void comprar(Torneo t, Jugador j)  throws FondoInsuficienteException, EquipoCompletoException, ExisteNombreException{
         presupuesto.comprar(t, j);
@@ -56,7 +56,7 @@ public class DT extends Usuario{
     }
 
     /**
-     * Método para obtener acceso al DTWallet del usuario.
+     * Método para obtener acceso al Presupuesto del usuario.
      * @return Devuelve el presupuesto del usuario.
      */
     public Presupuesto getPresupuesto() {

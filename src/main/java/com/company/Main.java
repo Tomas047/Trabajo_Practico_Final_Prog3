@@ -1,19 +1,16 @@
 package com.company;
 
 import com.company.Complementos.Posicion;
+import com.company.Exceptions.*;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws ExisteNombreException{
         ArrayList<ClubReal> listaDeClubes = new ArrayList<ClubReal>();
 
-       //BOCA
+        //BOCA
         ArrayList<Jugador> jugadoresBoca = new ArrayList<Jugador>();
 
         Jugador jugadorBoca1 = new Jugador("Agustin Rossi", 2000, 25, Posicion.ARQUERO, new Jugador.Propiedades());
@@ -23,10 +20,10 @@ public class Main {
         Jugador jugadorBoca5 = new Jugador("Frank Fabra", 2200, 30, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorBoca6 = new Jugador("Exequiel Zeballos", 3500, 19, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorBoca7 = new Jugador("Cristian Medina", 3000, 19, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorBoca8= new Jugador("Alan Varela", 4000, 19, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorBoca8 = new Jugador("Alan Varela", 4000, 19, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorBoca9 = new Jugador("Edwin Cardona", 4300, 28, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorBoca10= new Jugador("Carlos Tevez", 8000, 37, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorBoca11= new Jugador("Sebastian Villa", 7500, 25, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorBoca10 = new Jugador("Carlos Tevez", 8000, 37, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorBoca11 = new Jugador("Sebastian Villa", 7500, 25, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresBoca.add(jugadorBoca1);
         jugadoresBoca.add(jugadorBoca2);
         jugadoresBoca.add(jugadorBoca3);
@@ -44,14 +41,14 @@ public class Main {
         Jugador jugadorVelez1 = new Jugador("Lucas Hoyos", 600, 32, Posicion.ARQUERO, new Jugador.Propiedades());
         Jugador jugadorVelez2 = new Jugador("Hernan De la Fuente", 1800, 24, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorVelez3 = new Jugador("Luis Abrahm", 4800, 25, Posicion.DEFENSOR, new Jugador.Propiedades());
-        Jugador jugadorVelez4= new Jugador("Lautaro Gianetti", 4700, 27, Posicion.DEFENSOR, new Jugador.Propiedades());
+        Jugador jugadorVelez4 = new Jugador("Lautaro Gianetti", 4700, 27, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorVelez5 = new Jugador("Francisco Ortega", 4000, 22, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorVelez6 = new Jugador("Lucas Janson", 4200, 26, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorVelez7 = new Jugador("Pablo Galdamez", 3100, 24, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorVelez8= new Jugador("Federico Mancuello", 900, 32, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorVelez8 = new Jugador("Federico Mancuello", 900, 32, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorVelez9 = new Jugador("Thiago Almada", 8600, 20, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorVelez10= new Jugador("Ricardo Centurion", 2200, 28, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorVelez11= new Jugador("Cristian Tarragona", 1600, 30, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorVelez10 = new Jugador("Ricardo Centurion", 2200, 28, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorVelez11 = new Jugador("Cristian Tarragona", 1600, 30, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresVelez.add(jugadorVelez1);
         jugadoresVelez.add(jugadorVelez2);
         jugadoresVelez.add(jugadorVelez3);
@@ -69,14 +66,14 @@ public class Main {
         Jugador jugadorIndependiente1 = new Jugador("Sebastian Sosa", 2300, 34, Posicion.ARQUERO, new Jugador.Propiedades());
         Jugador jugadorIndependiente2 = new Jugador("Fabricio Bustos", 5000, 25, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorIndependiente3 = new Jugador("Juan Manuel Insaurralde", 600, 36, Posicion.DEFENSOR, new Jugador.Propiedades());
-        Jugador jugadorIndependiente4= new Jugador("Ezequiel Muñoz", 450, 30, Posicion.DEFENSOR, new Jugador.Propiedades());
+        Jugador jugadorIndependiente4 = new Jugador("Ezequiel Muñoz", 450, 30, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorIndependiente5 = new Jugador("Lucas Rodriguez", 375, 27, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorIndependiente6 = new Jugador("Alan Velazco", 5200, 18, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorIndependiente7 = new Jugador("Domingo Blanco", 3000, 26, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorIndependiente8= new Jugador("Pablo Hernandez", 2000, 34, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorIndependiente8 = new Jugador("Pablo Hernandez", 2000, 34, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorIndependiente9 = new Jugador("Andres Roa", 2000, 28, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorIndependiente10= new Jugador("Sebastian Palacios", 3500, 29, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorIndependiente11= new Jugador("Silvio Romero", 1600, 30, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorIndependiente10 = new Jugador("Sebastian Palacios", 3500, 29, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorIndependiente11 = new Jugador("Silvio Romero", 1600, 30, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresIndependiente.add(jugadorIndependiente1);
         jugadoresIndependiente.add(jugadorIndependiente2);
         jugadoresIndependiente.add(jugadorIndependiente3);
@@ -94,14 +91,14 @@ public class Main {
         Jugador jugadorTalleres1 = new Jugador("Guido Herrera", 1600, 29, Posicion.ARQUERO, new Jugador.Propiedades());
         Jugador jugadorTalleres2 = new Jugador("Nahuel Tenaglia", 3500, 25, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorTalleres3 = new Jugador("Juan Komar", 3500, 24, Posicion.DEFENSOR, new Jugador.Propiedades());
-        Jugador jugadorTalleres4= new Jugador("Piero Hincapie", 5000, 19, Posicion.DEFENSOR, new Jugador.Propiedades());
+        Jugador jugadorTalleres4 = new Jugador("Piero Hincapie", 5000, 19, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorTalleres5 = new Jugador("Enzo Diaz", 2400, 25, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorTalleres6 = new Jugador("Joel Soñora", 1200, 24, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorTalleres7= new Jugador("Francis Mac Alister", 1300, 25, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorTalleres8= new Jugador("Guilherme Parede", 800, 25, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorTalleres7 = new Jugador("Francis Mac Alister", 1300, 25, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorTalleres8 = new Jugador("Guilherme Parede", 800, 25, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorTalleres9 = new Jugador("Jose Mauri", 400, 25, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorTalleres10= new Jugador("Diego Valoyes", 5000, 24, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorTalleres11= new Jugador("Carlos Auzqui", 3300, 29, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorTalleres10 = new Jugador("Diego Valoyes", 5000, 24, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorTalleres11 = new Jugador("Carlos Auzqui", 3300, 29, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresTalleres.add(jugadorTalleres1);
         jugadoresTalleres.add(jugadorTalleres2);
         jugadoresTalleres.add(jugadorTalleres3);
@@ -120,14 +117,14 @@ public class Main {
         Jugador jugadorLanus1 = new Jugador("Lautaro Morales", 1600, 21, Posicion.ARQUERO, new Jugador.Propiedades());
         Jugador jugadorLanus2 = new Jugador("Jose Luis Gomez", 3300, 27, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorLanus3 = new Jugador("Guillermo Burdiso", 1500, 32, Posicion.DEFENSOR, new Jugador.Propiedades());
-        Jugador jugadorLanus4= new Jugador("Nicolas Thaller", 500, 22, Posicion.DEFENSOR, new Jugador.Propiedades());
+        Jugador jugadorLanus4 = new Jugador("Nicolas Thaller", 500, 22, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorLanus5 = new Jugador("Alexandro Bernabei", 3000, 20, Posicion.DEFENSOR, new Jugador.Propiedades());
         Jugador jugadorLanus6 = new Jugador("Tomas Belmonte", 4000, 23, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorLanus7= new Jugador("Facundo Quignon", 2400, 28, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorLanus8= new Jugador("Pedro De La Vega", 3500, 20, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorLanus7 = new Jugador("Facundo Quignon", 2400, 28, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
+        Jugador jugadorLanus8 = new Jugador("Pedro De La Vega", 3500, 20, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorLanus9 = new Jugador("Leonel Di Placido", 4000, 27, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorLanus10= new Jugador("Jose Sand", 8000, 40, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorLanus11= new Jugador("Lautaro Acosta", 5000, 33, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorLanus10 = new Jugador("Jose Sand", 8000, 40, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorLanus11 = new Jugador("Lautaro Acosta", 5000, 33, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresLanus.add(jugadorLanus1);
         jugadoresLanus.add(jugadorLanus2);
         jugadoresLanus.add(jugadorLanus3);
@@ -153,8 +150,8 @@ public class Main {
         Jugador jugadorHuracan7 = new Jugador("Claudio Yacob", 2800, 33, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorHuracan8 = new Jugador("Patricio Toranzo", 1200, 39, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorHuracan9 = new Jugador("Juan Garro", 2400, 28, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorHuracan10= new Jugador("Norberto Briasco", 1800, 25, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorHuracan11= new Jugador("Andres Chavez", 3500, 30, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorHuracan10 = new Jugador("Norberto Briasco", 1800, 25, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorHuracan11 = new Jugador("Andres Chavez", 3500, 30, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresHuracan.add(jugadorHuracan1);
         jugadoresHuracan.add(jugadorHuracan2);
         jugadoresHuracan.add(jugadorHuracan3);
@@ -179,8 +176,8 @@ public class Main {
         Jugador jugadorgimnasia7 = new Jugador("Victor Ayala", 5000, 33, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorgimnasia8 = new Jugador("Brahian Aleman", 2000, 31, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorgimnasia9 = new Jugador("Matias Perez Garcia", 3500, 36, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorgimnasia10= new Jugador("Lucas Barrios", 1600, 36, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorgimnasia11= new Jugador("Nicolas Contin", 2400, 25, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorgimnasia10 = new Jugador("Lucas Barrios", 1600, 36, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorgimnasia11 = new Jugador("Nicolas Contin", 2400, 25, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresGimnasia.add(jugadorgimnasia1);
         jugadoresGimnasia.add(jugadorgimnasia2);
         jugadoresGimnasia.add(jugadorgimnasia3);
@@ -204,8 +201,8 @@ public class Main {
         Jugador jugadorPatronato7 = new Jugador("Nicolas Delgadillo", 3000, 23, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorPatronato8 = new Jugador("Hector Canteros", 600, 32, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorPatronato9 = new Jugador("Neri Bandiera", 4000, 31, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorPatronato10= new Jugador("Sebastian Sosa", 1600, 27, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorPatronato11= new Jugador("Junior Arias", 2900, 28, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorPatronato10 = new Jugador("Sebastian Sosa", 1600, 27, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorPatronato11 = new Jugador("Junior Arias", 2900, 28, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresPatronato.add(jugadorPatronato1);
         jugadoresPatronato.add(jugadorPatronato2);
         jugadoresPatronato.add(jugadorPatronato3);
@@ -230,8 +227,8 @@ public class Main {
         Jugador jugadorDyJ7 = new Jugador("Ciro Rius", 3400, 32, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorDyJ8 = new Jugador("Tomas Martinez", 2300, 26, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorDyJ9 = new Jugador("Enzo Fernandez", 3500, 20, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorDyJ10= new Jugador("Walter Bou", 6000, 27, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorDyJ11= new Jugador("Braian Romero", 3900, 29, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorDyJ10 = new Jugador("Walter Bou", 6000, 27, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorDyJ11 = new Jugador("Braian Romero", 3900, 29, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresDyJ.add(jugadorDyJ1);
         jugadoresDyJ.add(jugadorDyJ2);
         jugadoresDyJ.add(jugadorDyJ3);
@@ -256,8 +253,8 @@ public class Main {
         Jugador jugadorNewells7 = new Jugador("Pablo Perez", 5400, 35, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorNewells8 = new Jugador("Fernando Belluschi", 3600, 37, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
         Jugador jugadorNewells9 = new Jugador("Mauro Formica", 4200, 33, Posicion.MEDIOCAMPISTA, new Jugador.Propiedades());
-        Jugador jugadorNewells10= new Jugador("Maximiliano Rodriguez", 6300, 40, Posicion.DELANTERO, new Jugador.Propiedades());
-        Jugador jugadorNewells11= new Jugador("Ignacio Scoco", 5100, 36, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorNewells10 = new Jugador("Maximiliano Rodriguez", 6300, 40, Posicion.DELANTERO, new Jugador.Propiedades());
+        Jugador jugadorNewells11 = new Jugador("Ignacio Scoco", 5100, 36, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresNewells.add(jugadorNewells1);
         jugadoresNewells.add(jugadorNewells2);
         jugadoresNewells.add(jugadorNewells3);
@@ -344,9 +341,9 @@ public class Main {
         Jugador jugador31 = new Jugador("Rafael Santos Borre", 5500, 26, Posicion.DELANTERO, new Jugador.Propiedades());
         jugadoresRiver.add(jugador31);
         Jugador jugador32 = new Jugador("Julian Alvarez", 4000, 22, Posicion.DELANTERO, new Jugador.Propiedades());
-        jugadoresRiver.add(jugador21);
+        jugadoresRiver.add(jugador32);
         Jugador jugador33 = new Jugador("Matias Suarez", 6000, 32, Posicion.DELANTERO, new Jugador.Propiedades());
-        jugadoresRiver.add(jugador22);
+        jugadoresRiver.add(jugador33);
 
         ///RACING
         ArrayList<Jugador> jugadoresRacing = new ArrayList<Jugador>();
@@ -532,7 +529,7 @@ public class Main {
 
 
         ClubReal boca = new ClubReal("Boca Juniors", 23, jugadoresBoca);
-        ClubReal velez = new ClubReal("Velez Sarfield", 23, jugadoresVelez);
+        ClubReal velez = new ClubReal("Velez Sarsfield", 23, jugadoresVelez);
         ClubReal independiente = new ClubReal("Independiente", 23, jugadoresIndependiente);
         ClubReal talleres = new ClubReal("Talleres", 23, jugadoresTalleres);
         ClubReal lanus = new ClubReal("Lanus", 23, jugadoresLanus);
@@ -572,58 +569,158 @@ public class Main {
         listaDeClubes.add(talleres);
         listaDeClubes.add(defensayjusticia);
         listaDeClubes.add(colon);
-
-        String path = "C:\\..."; ///Pasamos el directorio
+/*
+        String path = "C:\\Users\\Diego Contreras\\IdeaProjects\\Trabajo_Practico_Final_Prog3\\src\\main\\resources\\archivoClubes.txt";///Ubicacion del archivo
 
         File miArchi = new File(path);
 
-        if(!miArchi.exists()){
-            System.out.println("El archivo no existe pa, vamos a tener que crear uno");
-            miArchi.createNewFile();
-            System.out.println("Archivo " + miArchi.getName() + " creado con exito!\n");
-        }
+        try
 
-        if(miArchi.isDirectory()){
-            File[] fileList = miArchi.listFiles();
-
-            System.out.println("--- Lista de archivos de nuestro directorio ---");
-            for(File fichero : fileList){
-                System.out.println(fichero.getName());
-            }
-        } else {
-            /// MOSTRAMOS LOS DATOS DEL ARCHIVO
-            System.out.println("--- DATOS DEL ARCHIVO ---");
-            System.out.println("Nombre: " + miArchi.getName());
-            System.out.println("Ruta: " + miArchi.getPath());
-            System.out.println("Tamaño: (Bytes) " + miArchi.length());
-
-            Date lastUpdate = new Date(miArchi.lastModified());
-            System.out.println("Ultima modificacion: " + lastUpdate.toString());
-
-            FileWriter fWritter = new FileWriter(miArchi);
-            BufferedWriter bWritter = new BufferedWriter(fWritter);
-
-            if(!miArchi.canWrite()){
-                miArchi.setWritable(true);
+        {
+            if (!miArchi.exists()) {
+                System.out.println("El archivo no existe, vamos a tener que crear uno.");
+                miArchi.createNewFile();
+                System.out.println("Archivo " + miArchi.getName() + " creado con exito!\n");
             }
 
-            System.out.println("\n --- ESCRIBIR ARCHIVO ---");
-            bWritter.write("Laboratorio 3");
-            bWritter.newLine();
+            if (miArchi.isDirectory()) {
+                File[] fileList = miArchi.listFiles();
 
-            ///FIN DE LA ESCRITURA EN EL ARCHIVO
-            System.out.println("Cerrando el buffer");
-            bWritter.close();
-        }
+                System.out.println("--- Lista de archivos de nuestro directorio ---");
+                for (File fichero : fileList) {
+                    System.out.println(fichero.getName());
+                }
+            } else {
+                /// MOSTRAMOS LOS DATOS DEL ARCHIVO
+                System.out.println("--- DATOS DEL ARCHIVO ---");
+                System.out.println("Nombre: " + miArchi.getName());
+                System.out.println("Ruta: " + miArchi.getPath());
+                System.out.println("Tamaño: (Bytes) " + miArchi.length());
 
-       for(int i = 0; i <= listaDeClubes.size()-1; i++){
-           System.out.println("Club: " + listaDeClubes.get(i).getNombre());
-           for(int j = 0; j <= listaDeClubes.get(i).listaJugadores.size()-1; j++) {
+                Date lastUpdate = new Date(miArchi.lastModified());
+                System.out.println("Ultima modificacion: " + lastUpdate.toString());
 
-           }
-       }
+                FileWriter fWritter = new FileWriter(miArchi);
+                BufferedWriter bWritter = new BufferedWriter(fWritter);
 
+                if (!miArchi.canWrite()) {
+                    miArchi.setWritable(true);
+                }
+
+                System.out.println("\n --- ESCRIBIR ARCHIVO ---");
+                for (int i = 0; i <= listaDeClubes.size() - 1; i++) {
+                    bWritter.write("\n" + listaDeClubes.get(i).getNombre() + ": ");
+                    bWritter.newLine();
+                    for (int j = 0; j <= listaDeClubes.get(i).listaJugadores.size() - 1; j++) {
+                        bWritter.write("---------------------------------------");
+                        bWritter.newLine();
+                        bWritter.write("Nombre Jugador: " + listaDeClubes.get(i).getListaJugadores().get(j).getNombre());
+                        bWritter.newLine();
+                        bWritter.write("Edad: " + listaDeClubes.get(i).getListaJugadores().get(j).getEdad());
+                        bWritter.newLine();
+                        bWritter.write("Posicion: " + listaDeClubes.get(i).getListaJugadores().get(j).getPosicion());
+                        bWritter.newLine();
+                        bWritter.write("Precio: $" + listaDeClubes.get(i).getListaJugadores().get(j).getPrecio());
+                        bWritter.newLine();
+                        bWritter.write("---------------------------------------");
+                        bWritter.newLine();
+                    }
+                }
+
+                ///FIN DE LA ESCRITURA EN EL ARCHIVO
+                System.out.println("--- CERRANDO EL BUFFER ---");
+                bWritter.close();
+            }
+
+            ///Preparamos nuestro ambiente de lectura
+            FileReader fReader = new FileReader(miArchi);
+            BufferedReader bReader = new BufferedReader(fReader);
+
+            String line = null;
+
+            if (!miArchi.canRead()) {
+                miArchi.setReadable(true);
+            }
+
+            line = bReader.readLine();
+
+            System.out.println("\n --- INICIANDO LECTURA ---");
+            while (line != null) {
+                System.out.println(line);
+                line = bReader.readLine();
+            }
+
+            System.out.println("\n --- CERRANDO BUFFER DE LECTURA ---");
+            bReader.close();
+        } catch(
+                IOException e)
+
+        {
+            System.out.println("No se pudo leer/escribir el archivo: " + e.getMessage());
+            e.printStackTrace();
+        }*/
+
+        ///PRUEBA DT, TORNEO, PRESUPUESTO, ADMIN EQUIPO
+        DT dt1 = new DT("Diego Contreras");
+
+        Torneo superligaArgentina = new Torneo("Superliga Argentina", 23, listaDeClubes);
+
+        dt1.inscribirse(superligaArgentina);
+
+        System.out.println(dt1.estaInscripto(superligaArgentina));
+
+        System.out.println(dt1.getPuntos(superligaArgentina) + " puntos.");
+
+        Presupuesto presu = dt1.getPresupuesto();
+
+        System.out.println("$" + presu.getPresupuestoInicial(superligaArgentina));
+
+        ///Asignarle una posicion a cada equipito
+
+        System.out.println(presu.consultarCompra(superligaArgentina, listaDeClubes.get(1).listaJugadores.get(1)));
+
+        presu.setPresupuestoInicial(superligaArgentina);
+
+        System.out.println("$" + presu.getPresupuestoInicial(superligaArgentina));
+
+        //AdministracionEquipo adminEquipo = dt1.getAdminEquipo();
+/*
+        dt1.comprar(superligaArgentina, listaDeClubes.get(0).listaJugadores.get(10));
+        presu.comprar(superligaArgentina);*/
+
+        ///Prueba Jugador
+        System.out.println(jugador1.getEdad());
+        System.out.println(jugador1.getNombre());
+        System.out.println(jugador1.getPosicion());
+        System.out.println("$" + jugador1.getPrecio());
+
+        Jugador.Propiedades p = new Jugador.Propiedades();
+        p.setPropiedad(1, 1);
+        p.setPropiedad(4, 2);
+        p.setPropiedad(0, 3);
+        jugador1.asignar(p);
+
+        System.out.println(jugador1.getPuntos() + " PUNTOS.");
+
+        System.out.println("Goles: " + p.getPropiedad(0));
+        System.out.println("Goles Penal: " + p.getPropiedad(1));
+        System.out.println("Goles en contra: " + p.getPropiedad(2));
+        System.out.println("Penales Atajados: " + p.getPropiedad(3));
+        System.out.println("Amarillas: " + p.getPropiedad(4));
+        System.out.println("Rojas: " + p.getPropiedad(5));
+
+        ///PRUEBA CLUB REAL
+        patronato.addJugador(new Jugador("Bruno Urribarri", 2500, 34, Posicion.DEFENSOR, new Jugador.Propiedades()));
+
+        System.out.println(listaDeClubes.get(14).getListaJugadores().get(11).getNombre());
+
+        System.out.println(listaDeClubes.get(14).getNombre());
 
 
     }
 }
+
+
+
+
+

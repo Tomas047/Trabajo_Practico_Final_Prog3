@@ -1,9 +1,6 @@
 package com.company;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -20,6 +17,12 @@ public class Torneo implements Serializable {
         this.nombre = nombre;
         this.maxJugadores = maxJugadores;
         equipos = new ArrayList<>();
+    }
+
+    public Torneo(String nombre, int maxJugadores, ArrayList<ClubReal> equipos){
+        this.nombre = nombre;
+        this.maxJugadores = maxJugadores;
+        this.equipos = equipos;
     }
 
     public Torneo(Torneo t) {

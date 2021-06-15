@@ -9,7 +9,7 @@ import java.util.Objects;
  */
 
 public class Jugador implements Serializable {
-    private final static int precioMinimo = 1000;
+    private final static int precioMinimo = 300;
     @Serial
     private static final long serialVersionUID = 1L;
     private String nombre;
@@ -156,8 +156,9 @@ public class Jugador implements Serializable {
 
         /**Se setea cada propiedad por separado
          * @param index el indice de la propiedad
-         * @param propiedad el valor de la misma*/
-        public void setPropiedad(int index, int propiedad){
+         * @param propiedad el valor de la misma
+         * @return*/
+        public Propiedades setPropiedad(int index, int propiedad){
             switch (index) {
                 case 0 -> goles = propiedad;
                 case 1 -> golesPenal = propiedad;
@@ -166,6 +167,7 @@ public class Jugador implements Serializable {
                 case 4 -> tarjetasAmarilla = propiedad;
                 case 5 -> tarjetasRoja = propiedad;
             }
+            return null;
         }
 
         /**
@@ -193,7 +195,7 @@ public class Jugador implements Serializable {
             total += Valores.golesEnContra.getValor() * golesEnContra;
             total += Valores.penalAtajado.getValor() * penalesAtajados;
             total += Valores.tarjetaAmarilla.getValor() * tarjetasAmarilla;
-            total += Valores.tarjetaRoja.getValor() * tarjetasAmarilla;
+            total += Valores.tarjetaRoja.getValor() * tarjetasRoja;
 
             return total;
         }
@@ -249,16 +251,15 @@ public class Jugador implements Serializable {
         }
 
 
-
         /**
          * Encargado de contener los valores de cada propiedad*/
-        public enum Valores{ ///MODIFICAR VALORES + ADELANTE
-            goles(10),
-            golesPenal(5),
-            golesEnContra(-10),
-            penalAtajado(5),
-            tarjetaAmarilla(-5),
-            tarjetaRoja(-10);
+        public enum Valores{
+            goles(8),
+            golesPenal(3),
+            penalAtajado(4),
+            golesEnContra(-2),
+            tarjetaAmarilla(-2),
+            tarjetaRoja(-4);
 
             int valor;
 
