@@ -1,1360 +1,1141 @@
 
-Boca Juniors: 
----------------------------------------
-Nombre Jugador: Agustin Rossi
-Edad: 25
-Posicion: Arquero
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Julio Buffarini
-Edad: 32
-Posicion: Defensor
-Precio: $1000
----------------------------------------
----------------------------------------
-Nombre Jugador: Lisandro Lopez
-Edad: 31
-Posicion: Defensor
-Precio: $2900
----------------------------------------
----------------------------------------
-Nombre Jugador: Carlos Izquierdoz
-Edad: 32
-Posicion: Defensor
-Precio: $3300
----------------------------------------
----------------------------------------
-Nombre Jugador: Frank Fabra
-Edad: 30
-Posicion: Defensor
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Exequiel Zeballos
-Edad: 19
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Cristian Medina
-Edad: 19
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Alan Varela
-Edad: 19
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Edwin Cardona
-Edad: 28
-Posicion: Mediocampista
-Precio: $4300
----------------------------------------
----------------------------------------
-Nombre Jugador: Carlos Tevez
-Edad: 37
-Posicion: Delantero
-Precio: $8000
----------------------------------------
----------------------------------------
-Nombre Jugador: Sebastian Villa
-Edad: 25
-Posicion: Delantero
-Precio: $7500
----------------------------------------
+*Boca Juniors
 
-River: 
----------------------------------------
-Nombre Jugador: Franco Armani
-Edad: 32
-Posicion: Arquero
-Precio: $6000
----------------------------------------
----------------------------------------
-Nombre Jugador: Gonzalo Montiel
-Edad: 24
-Posicion: Defensor
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Paulo Diaz
-Edad: 28
-Posicion: Defensor
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Hector Martinez
-Edad: 23
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Fabricio Angileri
-Edad: 25
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Enzo Perez
-Edad: 38
-Posicion: Mediocampista
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Agustin Palavecino
-Edad: 24
-Posicion: Mediocampista
-Precio: $2900
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas De La Cruz
-Edad: 26
-Posicion: Mediocampista
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Rafael Santos Borre
-Edad: 26
-Posicion: Delantero
-Precio: $5500
----------------------------------------
----------------------------------------
-Nombre Jugador: Julian Alvarez
-Edad: 22
-Posicion: Delantero
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Matias Suarez
-Edad: 32
-Posicion: Delantero
-Precio: $6000
----------------------------------------
+Agustin Rossi
+25
+Arquero
+2000
+-
+Julio Buffarini
+32
+Defensor
+1000
+-
+Lisandro Lopez
+31
+Defensor
+2900
+-
+Carlos Izquierdoz
+32
+Defensor
+3300
+-
+Frank Fabra
+30
+Defensor
+2200
+-
+Exequiel Zeballos
+19
+Mediocampista
+3500
+-
+Cristian Medina
+19
+Mediocampista
+3000
+-
+Alan Varela
+19
+Mediocampista
+4000
+-
+Edwin Cardona
+28
+Mediocampista
+4300
+-
+Carlos Tevez
+37
+Delantero
+8000
+-
+Sebastian Villa
+25
+Delantero
+7500
+-
+*River
 
-Independiente: 
----------------------------------------
-Nombre Jugador: Sebastian Sosa
-Edad: 34
-Posicion: Arquero
-Precio: $2300
----------------------------------------
----------------------------------------
-Nombre Jugador: Fabricio Bustos
-Edad: 25
-Posicion: Defensor
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Manuel Insaurralde
-Edad: 36
-Posicion: Defensor
-Precio: $600
----------------------------------------
----------------------------------------
-Nombre Jugador: Ezequiel Muñoz
-Edad: 30
-Posicion: Defensor
-Precio: $450
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Rodriguez
-Edad: 27
-Posicion: Defensor
-Precio: $375
----------------------------------------
----------------------------------------
-Nombre Jugador: Alan Velazco
-Edad: 18
-Posicion: Mediocampista
-Precio: $5200
----------------------------------------
----------------------------------------
-Nombre Jugador: Domingo Blanco
-Edad: 26
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Pablo Hernandez
-Edad: 34
-Posicion: Mediocampista
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Andres Roa
-Edad: 28
-Posicion: Mediocampista
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Sebastian Palacios
-Edad: 29
-Posicion: Delantero
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Silvio Romero
-Edad: 30
-Posicion: Delantero
-Precio: $1600
----------------------------------------
+Franco Armani
+32
+Arquero
+6000
+-
+Gonzalo Montiel
+24
+Defensor
+5000
+-
+Paulo Diaz
+28
+Defensor
+4000
+-
+Hector Martinez
+23
+Defensor
+3000
+-
+Fabricio Angileri
+25
+Defensor
+3500
+-
+Enzo Perez
+38
+Mediocampista
+4500
+-
+Agustin Palavecino
+24
+Mediocampista
+2900
+-
+Nicolas De La Cruz
+26
+Mediocampista
+4500
+-
+Rafael Santos Borre
+26
+Delantero
+5500
+-
+Julian Alvarez
+22
+Delantero
+4000
+-
+Matias Suarez
+32
+Delantero
+6000
+-
+*Independiente
 
-Racing: 
----------------------------------------
-Nombre Jugador: Gabriel Arias
-Edad: 32
-Posicion: Arquero
-Precio: $6000
----------------------------------------
----------------------------------------
-Nombre Jugador: Ivan Pillud
-Edad: 35
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Leonardo Sigali
-Edad: 33
-Posicion: Defensor
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Nery Dominguez
-Edad: 28
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Eugenio Mena
-Edad: 32
-Posicion: Defensor
-Precio: $4700
----------------------------------------
----------------------------------------
-Nombre Jugador: Mauricio Martinez
-Edad: 28
-Posicion: Mediocampista
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Anibal Moreno
-Edad: 22
-Posicion: Mediocampista
-Precio: $2700
----------------------------------------
----------------------------------------
-Nombre Jugador: Leonel Miranda
-Edad: 32
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Tomas Chancalay
-Edad: 25
-Posicion: Delantero
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Dario Cvitanich
-Edad: 36
-Posicion: Delantero
-Precio: $5500
----------------------------------------
----------------------------------------
-Nombre Jugador: Enzo Copetti
-Edad: 25
-Posicion: Delantero
-Precio: $4500
----------------------------------------
+Sebastian Sosa
+34
+Arquero
+2300
+-
+Fabricio Bustos
+25
+Defensor
+5000
+-
+Juan Manuel Insaurralde
+36
+Defensor
+600
+-
+Ezequiel Muñoz
+30
+Defensor
+450
+-
+Lucas Rodriguez
+27
+Defensor
+375
+-
+Alan Velazco
+18
+Mediocampista
+5200
+-
+Domingo Blanco
+26
+Mediocampista
+3000
+-
+Pablo Hernandez
+34
+Mediocampista
+2000
+-
+Andres Roa
+28
+Mediocampista
+2000
+-
+Sebastian Palacios
+29
+Delantero
+3500
+-
+Silvio Romero
+30
+Delantero
+1600
+-
+*Racing
 
-Estudiantes: 
----------------------------------------
-Nombre Jugador: Mariano Andujar
-Edad: 37
-Posicion: Arquero
-Precio: $5500
----------------------------------------
----------------------------------------
-Nombre Jugador: Leonardo Godoy
-Edad: 24
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Agustin Rogel
-Edad: 23
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Fabian Noguera
-Edad: 26
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Pasquini
-Edad: 33
-Posicion: Defensor
-Precio: $2700
----------------------------------------
----------------------------------------
-Nombre Jugador: Angel Gonzalez
-Edad: 28
-Posicion: Mediocampista
-Precio: $3200
----------------------------------------
----------------------------------------
-Nombre Jugador: Joel Rodriguez
-Edad: 22
-Posicion: Mediocampista
-Precio: $2900
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Sanchez Miño
-Edad: 31
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Rodriguez
-Edad: 26
-Posicion: Mediocampista
-Precio: $3300
----------------------------------------
----------------------------------------
-Nombre Jugador: Leandro Diaz
-Edad: 34
-Posicion: Delantero
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Martin Cauteruccio
-Edad: 32
-Posicion: Delantero
-Precio: $3700
----------------------------------------
+Gabriel Arias
+32
+Arquero
+6000
+-
+Ivan Pillud
+35
+Defensor
+2000
+-
+Leonardo Sigali
+33
+Defensor
+4500
+-
+Nery Dominguez
+28
+Defensor
+3000
+-
+Eugenio Mena
+32
+Defensor
+4700
+-
+Mauricio Martinez
+28
+Mediocampista
+2500
+-
+Anibal Moreno
+22
+Mediocampista
+2700
+-
+Leonel Miranda
+32
+Mediocampista
+4000
+-
+Tomas Chancalay
+25
+Delantero
+5000
+-
+Dario Cvitanich
+36
+Delantero
+5500
+-
+Enzo Copetti
+25
+Delantero
+4500
+-
+*Estudiantes
 
-Velez Sarsfield: 
----------------------------------------
-Nombre Jugador: Lucas Hoyos
-Edad: 32
-Posicion: Arquero
-Precio: $600
----------------------------------------
----------------------------------------
-Nombre Jugador: Hernan De la Fuente
-Edad: 24
-Posicion: Defensor
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Luis Abrahm
-Edad: 25
-Posicion: Defensor
-Precio: $4800
----------------------------------------
----------------------------------------
-Nombre Jugador: Lautaro Gianetti
-Edad: 27
-Posicion: Defensor
-Precio: $4700
----------------------------------------
----------------------------------------
-Nombre Jugador: Francisco Ortega
-Edad: 22
-Posicion: Defensor
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Janson
-Edad: 26
-Posicion: Mediocampista
-Precio: $4200
----------------------------------------
----------------------------------------
-Nombre Jugador: Pablo Galdamez
-Edad: 24
-Posicion: Mediocampista
-Precio: $3100
----------------------------------------
----------------------------------------
-Nombre Jugador: Federico Mancuello
-Edad: 32
-Posicion: Mediocampista
-Precio: $900
----------------------------------------
----------------------------------------
-Nombre Jugador: Thiago Almada
-Edad: 20
-Posicion: Mediocampista
-Precio: $8600
----------------------------------------
----------------------------------------
-Nombre Jugador: Ricardo Centurion
-Edad: 28
-Posicion: Delantero
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Cristian Tarragona
-Edad: 30
-Posicion: Delantero
-Precio: $1600
----------------------------------------
+Mariano Andujar
+37
+Arquero
+5500
+-
+Leonardo Godoy
+24
+Defensor
+3000
+-
+Agustin Rogel
+23
+Defensor
+1500
+-
+Fabian Noguera
+26
+Defensor
+3000
+-
+Nicolas Pasquini
+33
+Defensor
+2700
+-
+Angel Gonzalez
+28
+Mediocampista
+3200
+-
+Joel Rodriguez
+22
+Mediocampista
+2900
+-
+Juan Sanchez Miño
+31
+Mediocampista
+3000
+-
+Lucas Rodriguez
+26
+Mediocampista
+3300
+-
+Leandro Diaz
+34
+Delantero
+4000
+-
+Martin Cauteruccio
+32
+Delantero
+3700
+-
+*Velez Sarsfield
 
-San Lorenzo: 
----------------------------------------
-Nombre Jugador: Sebastian Torrico
-Edad: 41
-Posicion: Arquero
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Marcelo Herreras
-Edad: 22
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Federico Gattoni
-Edad: 22
-Posicion: Defensor
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Diego Braghieri
-Edad: 32
-Posicion: Defensor
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gabriel Rojas
-Edad: 25
-Posicion: Defensor
-Precio: $3200
----------------------------------------
----------------------------------------
-Nombre Jugador: Jalil Elias
-Edad: 27
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Diego Rodriguez
-Edad: 33
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Oscar Romero
-Edad: 28
-Posicion: Mediocampista
-Precio: $5500
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Ramirez
-Edad: 29
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Fernandez
-Edad: 28
-Posicion: Delantero
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Angel Romero
-Edad: 28
-Posicion: Delantero
-Precio: $6500
----------------------------------------
+Lucas Hoyos
+32
+Arquero
+600
+-
+Hernan De la Fuente
+24
+Defensor
+1800
+-
+Luis Abrahm
+25
+Defensor
+4800
+-
+Lautaro Gianetti
+27
+Defensor
+4700
+-
+Francisco Ortega
+22
+Defensor
+4000
+-
+Lucas Janson
+26
+Mediocampista
+4200
+-
+Pablo Galdamez
+24
+Mediocampista
+3100
+-
+Federico Mancuello
+32
+Mediocampista
+900
+-
+Thiago Almada
+20
+Mediocampista
+8600
+-
+Ricardo Centurion
+28
+Delantero
+2200
+-
+Cristian Tarragona
+30
+Delantero
+1600
+-
+*San Lorenzo
 
-Rosario Central: 
----------------------------------------
-Nombre Jugador: Jorge Broun
-Edad: 35
-Posicion: Arquero
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Damian Martinez
-Edad: 28
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Facundo Almada
-Edad: 22
-Posicion: Defensor
-Precio: $1200
----------------------------------------
----------------------------------------
-Nombre Jugador: Gaston Avila
-Edad: 22
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Lautaro Blanco
-Edad: 22
-Posicion: Defensor
-Precio: $1400
----------------------------------------
----------------------------------------
-Nombre Jugador: Luciano Ferreyra
-Edad: 19
-Posicion: Mediocampista
-Precio: $1100
----------------------------------------
----------------------------------------
-Nombre Jugador: Diego Zabala
-Edad: 29
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Emiliano Vecchio
-Edad: 32
-Posicion: Mediocampista
-Precio: $5500
----------------------------------------
----------------------------------------
-Nombre Jugador: Pedro Ojeda
-Edad: 23
-Posicion: Mediocampista
-Precio: $1400
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Gamba
-Edad: 30
-Posicion: Delantero
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Marcos Ruben
-Edad: 35
-Posicion: Delantero
-Precio: $6000
----------------------------------------
+Sebastian Torrico
+41
+Arquero
+3000
+-
+Marcelo Herreras
+22
+Defensor
+2000
+-
+Federico Gattoni
+22
+Defensor
+2500
+-
+Diego Braghieri
+32
+Defensor
+4500
+-
+Gabriel Rojas
+25
+Defensor
+3200
+-
+Jalil Elias
+27
+Mediocampista
+3000
+-
+Diego Rodriguez
+33
+Mediocampista
+3000
+-
+Oscar Romero
+28
+Mediocampista
+5500
+-
+Juan Ramirez
+29
+Mediocampista
+4000
+-
+Nicolas Fernandez
+28
+Delantero
+3500
+-
+Angel Romero
+28
+Delantero
+6500
+-
+*Rosario Central
 
-Newell's Old Boys: 
----------------------------------------
-Nombre Jugador: Alan Aguerre
-Edad: 30
-Posicion: Arquero
-Precio: $1200
----------------------------------------
----------------------------------------
-Nombre Jugador: Facundo Nadalin
-Edad: 23
-Posicion: Defensor
-Precio: $1700
----------------------------------------
----------------------------------------
-Nombre Jugador: Cristian Lema
-Edad: 31
-Posicion: Defensor
-Precio: $3300
----------------------------------------
----------------------------------------
-Nombre Jugador: Santiago Gentileti
-Edad: 36
-Posicion: Defensor
-Precio: $2400
----------------------------------------
----------------------------------------
-Nombre Jugador: Mariano Bittolo
-Edad: 31
-Posicion: Defensor
-Precio: $2600
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Sforza
-Edad: 19
-Posicion: Mediocampista
-Precio: $2700
----------------------------------------
----------------------------------------
-Nombre Jugador: Pablo Perez
-Edad: 35
-Posicion: Mediocampista
-Precio: $5400
----------------------------------------
----------------------------------------
-Nombre Jugador: Fernando Belluschi
-Edad: 37
-Posicion: Mediocampista
-Precio: $3600
----------------------------------------
----------------------------------------
-Nombre Jugador: Mauro Formica
-Edad: 33
-Posicion: Mediocampista
-Precio: $4200
----------------------------------------
----------------------------------------
-Nombre Jugador: Maximiliano Rodriguez
-Edad: 40
-Posicion: Delantero
-Precio: $6300
----------------------------------------
----------------------------------------
-Nombre Jugador: Ignacio Scoco
-Edad: 36
-Posicion: Delantero
-Precio: $5100
----------------------------------------
+Jorge Broun
+35
+Arquero
+5000
+-
+Damian Martinez
+28
+Defensor
+2000
+-
+Facundo Almada
+22
+Defensor
+1200
+-
+Gaston Avila
+22
+Defensor
+2000
+-
+Lautaro Blanco
+22
+Defensor
+1400
+-
+Luciano Ferreyra
+19
+Mediocampista
+1100
+-
+Diego Zabala
+29
+Mediocampista
+3500
+-
+Emiliano Vecchio
+32
+Mediocampista
+5500
+-
+Pedro Ojeda
+23
+Mediocampista
+1400
+-
+Lucas Gamba
+30
+Delantero
+4000
+-
+Marcos Ruben
+35
+Delantero
+6000
+-
+*Newell's Old Boys
 
-Huracan: 
----------------------------------------
-Nombre Jugador: Facundo Cambaceres
-Edad: 24
-Posicion: Arquero
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Ezequiel Bonifacio
-Edad: 27
-Posicion: Defensor
-Precio: $1300
----------------------------------------
----------------------------------------
-Nombre Jugador: Renato Civelli
-Edad: 37
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Merolla
-Edad: 25
-Posicion: Defensor
-Precio: $2100
----------------------------------------
----------------------------------------
-Nombre Jugador: Leonardo Grimi
-Edad: 36
-Posicion: Defensor
-Precio: $600
----------------------------------------
----------------------------------------
-Nombre Jugador: Esteban Rolon
-Edad: 26
-Posicion: Mediocampista
-Precio: $1000
----------------------------------------
----------------------------------------
-Nombre Jugador: Claudio Yacob
-Edad: 33
-Posicion: Mediocampista
-Precio: $2800
----------------------------------------
----------------------------------------
-Nombre Jugador: Patricio Toranzo
-Edad: 39
-Posicion: Mediocampista
-Precio: $1200
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Garro
-Edad: 28
-Posicion: Mediocampista
-Precio: $2400
----------------------------------------
----------------------------------------
-Nombre Jugador: Norberto Briasco
-Edad: 25
-Posicion: Delantero
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Andres Chavez
-Edad: 30
-Posicion: Delantero
-Precio: $3500
----------------------------------------
+Alan Aguerre
+30
+Arquero
+1200
+-
+Facundo Nadalin
+23
+Defensor
+1700
+-
+Cristian Lema
+31
+Defensor
+3300
+-
+Santiago Gentileti
+36
+Defensor
+2400
+-
+Mariano Bittolo
+31
+Defensor
+2600
+-
+Juan Sforza
+19
+Mediocampista
+2700
+-
+Pablo Perez
+35
+Mediocampista
+5400
+-
+Fernando Belluschi
+37
+Mediocampista
+3600
+-
+Mauro Formica
+33
+Mediocampista
+4200
+-
+Maximiliano Rodriguez
+40
+Delantero
+6300
+-
+Ignacio Scoco
+36
+Delantero
+5100
+-
+*Huracan
 
-Argentinos: 
----------------------------------------
-Nombre Jugador: Lucas Chavez
-Edad: 25
-Posicion: Arquero
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Jonathan Sandoval
-Edad: 33
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Kevin Mac Allister
-Edad: 24
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Miguel Torren
-Edad: 32
-Posicion: Defensor
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Carlos Quintana
-Edad: 33
-Posicion: Defensor
-Precio: $3800
----------------------------------------
----------------------------------------
-Nombre Jugador: Elias Gomez
-Edad: 26
-Posicion: Defensor
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Jonathan Gomez
-Edad: 31
-Posicion: Mediocampista
-Precio: $1600
----------------------------------------
----------------------------------------
-Nombre Jugador: Franco Moyano
-Edad: 23
-Posicion: Mediocampista
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Cesar Florentin
-Edad: 22
-Posicion: Mediocampista
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gabriel Avalos
-Edad: 29
-Posicion: Delantero
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gabriel Hauche
-Edad: 34
-Posicion: Delantero
-Precio: $5000
----------------------------------------
+Facundo Cambaceres
+24
+Arquero
+1500
+-
+Ezequiel Bonifacio
+27
+Defensor
+1300
+-
+Renato Civelli
+37
+Defensor
+3500
+-
+Lucas Merolla
+25
+Defensor
+2100
+-
+Leonardo Grimi
+36
+Defensor
+600
+-
+Esteban Rolon
+26
+Mediocampista
+1000
+-
+Claudio Yacob
+33
+Mediocampista
+2800
+-
+Patricio Toranzo
+39
+Mediocampista
+1200
+-
+Juan Garro
+28
+Mediocampista
+2400
+-
+Norberto Briasco
+25
+Delantero
+1800
+-
+Andres Chavez
+30
+Delantero
+3500
+-
+*Argentinos
 
-Godoy Cruz: 
----------------------------------------
-Nombre Jugador: Fabian Assmann
-Edad: 35
-Posicion: Arquero
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Joaquin Indacoechea
-Edad: 20
-Posicion: Defensor
-Precio: $1400
----------------------------------------
----------------------------------------
-Nombre Jugador: Jonathan Schunke
-Edad: 34
-Posicion: Defensor
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Emiliano Insua
-Edad: 32
-Posicion: Defensor
-Precio: $3700
----------------------------------------
----------------------------------------
-Nombre Jugador: Emanuel Insua
-Edad: 30
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Leandro Maciel
-Edad: 25
-Posicion: Mediocampista
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gaston Gil Romero
-Edad: 28
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gaston Lodico
-Edad: 23
-Posicion: Mediocampista
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Francisco Grahl
-Edad: 29
-Posicion: Mediocampista
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Federico Andrada
-Edad: 27
-Posicion: Delantero
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Malcom Braida
-Edad: 24
-Posicion: Delantero
-Precio: $2200
----------------------------------------
+Lucas Chavez
+25
+Arquero
+4000
+-
+Jonathan Sandoval
+33
+Defensor
+3500
+-
+Kevin Mac Allister
+24
+Defensor
+2000
+-
+Miguel Torren
+32
+Defensor
+4500
+-
+Carlos Quintana
+33
+Defensor
+3800
+-
+Elias Gomez
+26
+Defensor
+4000
+-
+Jonathan Gomez
+31
+Mediocampista
+1600
+-
+Franco Moyano
+23
+Mediocampista
+2200
+-
+Cesar Florentin
+22
+Mediocampista
+1500
+-
+Gabriel Avalos
+29
+Delantero
+4500
+-
+Gabriel Hauche
+34
+Delantero
+5000
+-
+*Godoy Cruz
 
-Godoy Cruz: 
----------------------------------------
-Nombre Jugador: Nelson Ibañez
-Edad: 38
-Posicion: Arquero
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Hugo Silva
-Edad: 29
-Posicion: Defensor
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Mauro Dos Santos
-Edad: 31
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Augusto Aguirre
-Edad: 21
-Posicion: Defensor
-Precio: $1100
----------------------------------------
----------------------------------------
-Nombre Jugador: Damian Perez
-Edad: 31
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Ian Escobar
-Edad: 25
-Posicion: Defensor
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Renzo Tesuri
-Edad: 25
-Posicion: Mediocampista
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Wilder Cartagena
-Edad: 26
-Posicion: Mediocampista
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Fabian Henriquez
-Edad: 26
-Posicion: Mediocampista
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Cristian Colman
-Edad: 27
-Posicion: Delantero
-Precio: $2800
----------------------------------------
----------------------------------------
-Nombre Jugador: Matias Ramirez
-Edad: 22
-Posicion: Delantero
-Precio: $1500
----------------------------------------
+Fabian Assmann
+35
+Arquero
+2000
+-
+Joaquin Indacoechea
+20
+Defensor
+1400
+-
+Jonathan Schunke
+34
+Defensor
+2500
+-
+Emiliano Insua
+32
+Defensor
+3700
+-
+Emanuel Insua
+30
+Defensor
+3000
+-
+Leandro Maciel
+25
+Mediocampista
+2500
+-
+Gaston Gil Romero
+28
+Mediocampista
+3500
+-
+Gaston Lodico
+23
+Mediocampista
+2000
+-
+Francisco Grahl
+29
+Mediocampista
+2500
+-
+Federico Andrada
+27
+Delantero
+4000
+-
+Malcom Braida
+24
+Delantero
+2200
+-
+*Godoy Cruz
 
-Banfield: 
----------------------------------------
-Nombre Jugador: Ivan Arboleda
-Edad: 29
-Posicion: Arquero
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Emanuel Coronel
-Edad: 27
-Posicion: Defensor
-Precio: $2200
----------------------------------------
----------------------------------------
-Nombre Jugador: Alexis Maldonado
-Edad: 30
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Luciano Lollo
-Edad: 33
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Alexis Sosa
-Edad: 21
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Franco Quinteros
-Edad: 22
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Martin Payero
-Edad: 22
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Alejandro Cabrera
-Edad: 28
-Posicion: Mediocampista
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Giuliano Galoppo
-Edad: 21
-Posicion: Mediocampista
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Alvarez
-Edad: 25
-Posicion: Delantero
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Luciano Pons
-Edad: 31
-Posicion: Delantero
-Precio: $2200
----------------------------------------
+Nelson Ibañez
+38
+Arquero
+3000
+-
+Hugo Silva
+29
+Defensor
+1800
+-
+Mauro Dos Santos
+31
+Defensor
+2000
+-
+Augusto Aguirre
+21
+Defensor
+1100
+-
+Damian Perez
+31
+Defensor
+1500
+-
+Ian Escobar
+25
+Defensor
+2200
+-
+Renzo Tesuri
+25
+Mediocampista
+2000
+-
+Wilder Cartagena
+26
+Mediocampista
+1800
+-
+Fabian Henriquez
+26
+Mediocampista
+2200
+-
+Cristian Colman
+27
+Delantero
+2800
+-
+Matias Ramirez
+22
+Delantero
+1500
+-
+*Banfield
 
-Patronato: 
----------------------------------------
-Nombre Jugador: Matias Ibañez
-Edad: 34
-Posicion: Arquero
-Precio: $1000
----------------------------------------
----------------------------------------
-Nombre Jugador: Leandro Marin
-Edad: 29
-Posicion: Defensor
-Precio: $800
----------------------------------------
----------------------------------------
-Nombre Jugador: Dylan Gissi
-Edad: 30
-Posicion: Defensor
-Precio: $1100
----------------------------------------
----------------------------------------
-Nombre Jugador: Rolando Garcia
-Edad: 31
-Posicion: Defensor
-Precio: $700
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Kruzpzky
-Edad: 29
-Posicion: Defensor
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Damian Lemos
-Edad: 32
-Posicion: Mediocampista
-Precio: $1000
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Delgadillo
-Edad: 23
-Posicion: Mediocampista
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Hector Canteros
-Edad: 32
-Posicion: Mediocampista
-Precio: $600
----------------------------------------
----------------------------------------
-Nombre Jugador: Neri Bandiera
-Edad: 31
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Sebastian Sosa
-Edad: 27
-Posicion: Delantero
-Precio: $1600
----------------------------------------
----------------------------------------
-Nombre Jugador: Junior Arias
-Edad: 28
-Posicion: Delantero
-Precio: $2900
----------------------------------------
+Ivan Arboleda
+29
+Arquero
+4500
+-
+Emanuel Coronel
+27
+Defensor
+2200
+-
+Alexis Maldonado
+30
+Defensor
+3500
+-
+Luciano Lollo
+33
+Defensor
+3500
+-
+Alexis Sosa
+21
+Defensor
+1500
+-
+Franco Quinteros
+22
+Defensor
+1500
+-
+Martin Payero
+22
+Mediocampista
+4000
+-
+Alejandro Cabrera
+28
+Mediocampista
+1800
+-
+Giuliano Galoppo
+21
+Mediocampista
+5000
+-
+Juan Alvarez
+25
+Delantero
+2500
+-
+Luciano Pons
+31
+Delantero
+2200
+-
+*Patronato
 
-Lanus: 
----------------------------------------
-Nombre Jugador: Lautaro Morales
-Edad: 21
-Posicion: Arquero
-Precio: $1600
----------------------------------------
----------------------------------------
-Nombre Jugador: Jose Luis Gomez
-Edad: 27
-Posicion: Defensor
-Precio: $3300
----------------------------------------
----------------------------------------
-Nombre Jugador: Guillermo Burdiso
-Edad: 32
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Thaller
-Edad: 22
-Posicion: Defensor
-Precio: $500
----------------------------------------
----------------------------------------
-Nombre Jugador: Alexandro Bernabei
-Edad: 20
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Tomas Belmonte
-Edad: 23
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Facundo Quignon
-Edad: 28
-Posicion: Mediocampista
-Precio: $2400
----------------------------------------
----------------------------------------
-Nombre Jugador: Pedro De La Vega
-Edad: 20
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Leonel Di Placido
-Edad: 27
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Jose Sand
-Edad: 40
-Posicion: Delantero
-Precio: $8000
----------------------------------------
----------------------------------------
-Nombre Jugador: Lautaro Acosta
-Edad: 33
-Posicion: Delantero
-Precio: $5000
----------------------------------------
+Matias Ibañez
+34
+Arquero
+1000
+-
+Leandro Marin
+29
+Defensor
+800
+-
+Dylan Gissi
+30
+Defensor
+1100
+-
+Rolando Garcia
+31
+Defensor
+700
+-
+Lucas Kruzpzky
+29
+Defensor
+2500
+-
+Damian Lemos
+32
+Mediocampista
+1000
+-
+Nicolas Delgadillo
+23
+Mediocampista
+3000
+-
+Hector Canteros
+32
+Mediocampista
+600
+-
+Neri Bandiera
+31
+Mediocampista
+4000
+-
+Sebastian Sosa
+27
+Delantero
+1600
+-
+Junior Arias
+28
+Delantero
+2900
+-
+*Lanus
 
-Gimnasia y Esgrima de la Plata: 
----------------------------------------
-Nombre Jugador: Rodrigo Rey
-Edad: 30
-Posicion: Arquero
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Marcelo Weigandt
-Edad: 21
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Maximiliano Coronel
-Edad: 32
-Posicion: Defensor
-Precio: $1900
----------------------------------------
----------------------------------------
-Nombre Jugador: Tomas Fernandez
-Edad: 22
-Posicion: Defensor
-Precio: $900
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Litch
-Edad: 40
-Posicion: Defensor
-Precio: $1200
----------------------------------------
----------------------------------------
-Nombre Jugador: Johan Carbonero
-Edad: 21
-Posicion: Mediocampista
-Precio: $3600
----------------------------------------
----------------------------------------
-Nombre Jugador: Victor Ayala
-Edad: 33
-Posicion: Mediocampista
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Brahian Aleman
-Edad: 31
-Posicion: Mediocampista
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Matias Perez Garcia
-Edad: 36
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Lucas Barrios
-Edad: 36
-Posicion: Delantero
-Precio: $1600
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Contin
-Edad: 25
-Posicion: Delantero
-Precio: $2400
----------------------------------------
+Lautaro Morales
+21
+Arquero
+1600
+-
+Jose Luis Gomez
+27
+Defensor
+3300
+-
+Guillermo Burdiso
+32
+Defensor
+1500
+-
+Nicolas Thaller
+22
+Defensor
+500
+-
+Alexandro Bernabei
+20
+Defensor
+3000
+-
+Tomas Belmonte
+23
+Mediocampista
+4000
+-
+Facundo Quignon
+28
+Mediocampista
+2400
+-
+Pedro De La Vega
+20
+Mediocampista
+3500
+-
+Leonel Di Placido
+27
+Mediocampista
+4000
+-
+Jose Sand
+40
+Delantero
+8000
+-
+Lautaro Acosta
+33
+Delantero
+5000
+-
+*Gimnasia y Esgrima de la Plata
 
-Talleres: 
----------------------------------------
-Nombre Jugador: Guido Herrera
-Edad: 29
-Posicion: Arquero
-Precio: $1600
----------------------------------------
----------------------------------------
-Nombre Jugador: Nahuel Tenaglia
-Edad: 25
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Komar
-Edad: 24
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Piero Hincapie
-Edad: 19
-Posicion: Defensor
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Enzo Diaz
-Edad: 25
-Posicion: Defensor
-Precio: $2400
----------------------------------------
----------------------------------------
-Nombre Jugador: Joel Soñora
-Edad: 24
-Posicion: Mediocampista
-Precio: $1200
----------------------------------------
----------------------------------------
-Nombre Jugador: Francis Mac Alister
-Edad: 25
-Posicion: Mediocampista
-Precio: $1300
----------------------------------------
----------------------------------------
-Nombre Jugador: Guilherme Parede
-Edad: 25
-Posicion: Mediocampista
-Precio: $800
----------------------------------------
----------------------------------------
-Nombre Jugador: Jose Mauri
-Edad: 25
-Posicion: Mediocampista
-Precio: $400
----------------------------------------
----------------------------------------
-Nombre Jugador: Diego Valoyes
-Edad: 24
-Posicion: Delantero
-Precio: $5000
----------------------------------------
----------------------------------------
-Nombre Jugador: Carlos Auzqui
-Edad: 29
-Posicion: Delantero
-Precio: $3300
----------------------------------------
+Rodrigo Rey
+30
+Arquero
+1500
+-
+Marcelo Weigandt
+21
+Defensor
+2000
+-
+Maximiliano Coronel
+32
+Defensor
+1900
+-
+Tomas Fernandez
+22
+Defensor
+900
+-
+Lucas Litch
+40
+Defensor
+1200
+-
+Johan Carbonero
+21
+Mediocampista
+3600
+-
+Victor Ayala
+33
+Mediocampista
+5000
+-
+Brahian Aleman
+31
+Mediocampista
+2000
+-
+Matias Perez Garcia
+36
+Mediocampista
+3500
+-
+Lucas Barrios
+36
+Delantero
+1600
+-
+Nicolas Contin
+25
+Delantero
+2400
+-
+*Talleres
 
-Defensa y Justicia: 
----------------------------------------
-Nombre Jugador: Ezequiel Unsain
-Edad: 26
-Posicion: Arquero
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Nicolas Tripicho
-Edad: 29
-Posicion: Defensor
-Precio: $1800
----------------------------------------
----------------------------------------
-Nombre Jugador: Franco Paredes
-Edad: 22
-Posicion: Defensor
-Precio: $2100
----------------------------------------
----------------------------------------
-Nombre Jugador: Juan Rodriguez
-Edad: 27
-Posicion: Defensor
-Precio: $1300
----------------------------------------
----------------------------------------
-Nombre Jugador: Nahuel Gallardo
-Edad: 23
-Posicion: Defensor
-Precio: $1500
----------------------------------------
----------------------------------------
-Nombre Jugador: Raul Loaiza
-Edad: 27
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Ciro Rius
-Edad: 32
-Posicion: Mediocampista
-Precio: $3400
----------------------------------------
----------------------------------------
-Nombre Jugador: Tomas Martinez
-Edad: 26
-Posicion: Mediocampista
-Precio: $2300
----------------------------------------
----------------------------------------
-Nombre Jugador: Enzo Fernandez
-Edad: 20
-Posicion: Mediocampista
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Walter Bou
-Edad: 27
-Posicion: Delantero
-Precio: $6000
----------------------------------------
----------------------------------------
-Nombre Jugador: Braian Romero
-Edad: 29
-Posicion: Delantero
-Precio: $3900
----------------------------------------
+Guido Herrera
+29
+Arquero
+1600
+-
+Nahuel Tenaglia
+25
+Defensor
+3500
+-
+Juan Komar
+24
+Defensor
+3500
+-
+Piero Hincapie
+19
+Defensor
+5000
+-
+Enzo Diaz
+25
+Defensor
+2400
+-
+Joel Soñora
+24
+Mediocampista
+1200
+-
+Francis Mac Alister
+25
+Mediocampista
+1300
+-
+Guilherme Parede
+25
+Mediocampista
+800
+-
+Jose Mauri
+25
+Mediocampista
+400
+-
+Diego Valoyes
+24
+Delantero
+5000
+-
+Carlos Auzqui
+29
+Delantero
+3300
+-
+*Defensa y Justicia
 
-Colon: 
----------------------------------------
-Nombre Jugador: Leonardo Burian
-Edad: 37
-Posicion: Arquero
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Facundo Mura
-Edad: 25
-Posicion: Defensor
-Precio: $2500
----------------------------------------
----------------------------------------
-Nombre Jugador: Bruno Bianchi
-Edad: 35
-Posicion: Defensor
-Precio: $3500
----------------------------------------
----------------------------------------
-Nombre Jugador: Gustavo Piovi
-Edad: 24
-Posicion: Defensor
-Precio: $2000
----------------------------------------
----------------------------------------
-Nombre Jugador: Rafael Delgado
-Edad: 35
-Posicion: Defensor
-Precio: $3000
----------------------------------------
----------------------------------------
-Nombre Jugador: Alexis Castro
-Edad: 26
-Posicion: Mediocampista
-Precio: $4000
----------------------------------------
----------------------------------------
-Nombre Jugador: Federico Lertora
-Edad: 32
-Posicion: Mediocampista
-Precio: $3800
----------------------------------------
----------------------------------------
-Nombre Jugador: Rodrigo Aliendro
-Edad: 27
-Posicion: Mediocampista
-Precio: $4200
----------------------------------------
----------------------------------------
-Nombre Jugador: Christian Bernardi
-Edad: 28
-Posicion: Mediocampista
-Precio: $4500
----------------------------------------
----------------------------------------
-Nombre Jugador: Facundo Farias
-Edad: 18
-Posicion: Delantero
-Precio: $2700
----------------------------------------
----------------------------------------
-Nombre Jugador: Luis Miguel Rodriguez
-Edad: 37
-Posicion: Delantero
-Precio: $7000
----------------------------------------
+Ezequiel Unsain
+26
+Arquero
+3000
+-
+Nicolas Tripicho
+29
+Defensor
+1800
+-
+Franco Paredes
+22
+Defensor
+2100
+-
+Juan Rodriguez
+27
+Defensor
+1300
+-
+Nahuel Gallardo
+23
+Defensor
+1500
+-
+Raul Loaiza
+27
+Mediocampista
+4000
+-
+Ciro Rius
+32
+Mediocampista
+3400
+-
+Tomas Martinez
+26
+Mediocampista
+2300
+-
+Enzo Fernandez
+20
+Mediocampista
+3500
+-
+Walter Bou
+27
+Delantero
+6000
+-
+Braian Romero
+29
+Delantero
+3900
+-
+*Colon
+
+Leonardo Burian
+37
+Arquero
+3500
+-
+Facundo Mura
+25
+Defensor
+2500
+-
+Bruno Bianchi
+35
+Defensor
+3500
+-
+Gustavo Piovi
+24
+Defensor
+2000
+-
+Rafael Delgado
+35
+Defensor
+3000
+-
+Alexis Castro
+26
+Mediocampista
+4000
+-
+Federico Lertora
+32
+Mediocampista
+3800
+-
+Rodrigo Aliendro
+27
+Mediocampista
+4200
+-
+Christian Bernardi
+28
+Mediocampista
+4500
+-
+Facundo Farias
+18
+Delantero
+2700
+-
+Luis Miguel Rodriguez
+37
+Delantero
+7000
+-
