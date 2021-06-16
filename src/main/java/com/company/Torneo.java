@@ -19,16 +19,17 @@ public class Torneo implements Serializable {
         equipos = new ArrayList<>();
     }
 
-    public Torneo(String nombre, int maxJugadores, ArrayList<ClubReal> equipos){
+   /* public Torneo(String nombre, int maxJugadores, ArrayList<ClubReal> equipos){
         this.nombre = nombre;
         this.maxJugadores = maxJugadores;
         this.equipos = equipos;
-    }
+    }*/
 
     public Torneo(Torneo t) {
         this(t.getNombre(), t.getMaxJugadores());
         equipos.addAll(t.getEquipos());
     }
+
 
     ///Nombre --------------------------
     public String getNombre(){
@@ -70,8 +71,8 @@ public class Torneo implements Serializable {
     }
 
     public void addClub(ClubReal club){
-        ///equipos.add(club);
-        equipos.add(new ClubReal(club.getNombre(), maxJugadores, club.listaJugadores));
+        equipos.add(club);
+        ///equipos.add(new ClubReal(club.getNombre(), maxJugadores, club.listaJugadores));
     }
 
     public boolean buscarClub(ClubReal club){
@@ -132,7 +133,7 @@ public class Torneo implements Serializable {
 
     @Override
     public String toString() {
-        return nombre +"{"+ Arrays.toString(equipos.toArray()) + "}";
+        return "Nombre del torneo: " + nombre + Arrays.toString(equipos.toArray());
     }
 
     private void escribirObjeto(ObjectOutputStream out) throws IOException {

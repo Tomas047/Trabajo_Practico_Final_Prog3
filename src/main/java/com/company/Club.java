@@ -14,7 +14,7 @@ import java.io.Serializable;
 
 public abstract class Club implements Serializable{
     private int maxJugadores;
-    ArrayList<Jugador> listaJugadores;
+    ArrayList<Jugador> listaJugadores = new ArrayList<Jugador>();
 
     public Club(int maxJugadores){
         this.maxJugadores = maxJugadores;

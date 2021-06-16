@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Set;
 
+import static com.company.ArchivoUsuarios.*;
+
 /**
  * Clase que maneja todas las cuentas de usuarios del programa.
  */
@@ -14,7 +16,7 @@ import java.util.Set;
 public class AdministracionUsuarios implements Serializable{
     private static final long serialVersionUID = 1L;
 
-    private static ArrayList<Usuario> usuarios;
+    public static ArrayList<Usuario> usuarios;
     private static Usuario usuario;
 
     /**
@@ -98,7 +100,9 @@ public class AdministracionUsuarios implements Serializable{
 
     /**
      *
-     * *
+     *
+     * */
+
     public static boolean esDT() {
         return usuario != null && usuario instanceof DT;
     }
@@ -121,8 +125,8 @@ public class AdministracionUsuarios implements Serializable{
     }
 
     /** Carga los usuarios existentes al programa */
-    public static void cargarCuenta() throws IOException, ClassNotFoundException {
-        usuarios = (ArrayList<Usuario>) ArchivoUsuarios.leerArchivo("usuarios.txt");
+    public static void cargarCuentas() throws IOException, ClassNotFoundException {
+        usuarios = (ArrayList<Usuario>) leerArchivo("datosCargados.dat");
         if (usuarios == null)
             usuarios = new ArrayList<>();
     }
@@ -131,19 +135,20 @@ public class AdministracionUsuarios implements Serializable{
      * Guarda la lista de usuario existente
      * */
     public static void guardarCuenta() throws IOException, ClassNotFoundException {
-        ArchivoUsuarios.escribirArchivo(usuarios,"usuarios.dat");
+        escribirArchivo(usuarios,"datosCargados.dat");
     }
     /**
      * Metodo implementeados de la serializacion
      * */
-    private void escribirObjeto(ObjectOutputStream out) throws IOException {
+    private void escribirObjeto(ObjectOutputStream out) throws IOException{
         out.defaultWriteObject();
         out.writeObject(usuarios);
     }
+
     /**
      * Metodo implementeados de la serializacion
      * */
-    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException {
+    private void leerObjeto(ObjectInputStream ois) throws IOException, ClassNotFoundException{
         ois.defaultReadObject();
         usuarios = (ArrayList<Usuario>)ois.readObject();
     }

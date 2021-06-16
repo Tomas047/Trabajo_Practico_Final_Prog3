@@ -14,17 +14,28 @@ public class ClubReal extends Club implements Serializable {
     private static final long serialVersionUID = 1L;
     private String nombre;
 
+/*
     public ClubReal(String nombre, int maxJugadores, ArrayList<Jugador> listaJugadores){
         super(maxJugadores, listaJugadores);
         this.nombre = nombre;
     }
 
-    /*
     public ClubReal(String nombre, int maxJugadores, ClubReal equipo){
         super(maxJugadores);
         this.nombre = nombre;
         super.listaJugadores.addAll(equipo.getListaJugadores());
     }*/
+
+    public ClubReal(String nombre, int maxJug) {
+        super(maxJug);
+        this.nombre = nombre;
+    }
+
+    ClubReal(String nombre, ClubReal equipo, int maxJug) {
+        this(equipo.getNombre(), maxJug);
+        this.nombre = nombre;
+        listaJugadores.addAll(equipo.getListaJugadores());
+    }
 
     ///Nombre -----------------------------
     public String getNombre(){
@@ -78,7 +89,7 @@ public class ClubReal extends Club implements Serializable {
 
     @Override
     public String toString() {
-        return nombre +"{"+ Arrays.toString(listaJugadores.toArray())+"}";
+        return "\n\nNombre del equipo: " + nombre + Arrays.toString(listaJugadores.toArray());
     }
 
     private void leerObjeto(ObjectOutputStream out)throws IOException {

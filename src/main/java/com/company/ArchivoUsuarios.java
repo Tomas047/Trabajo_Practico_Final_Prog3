@@ -9,7 +9,7 @@ class ArchivoUsuarios{
 
     /**Busca la ruta donde esta guardado el archivo
      * devuelve la ruta del directorio*/
-    private static String obtenerrutadirect() {
+    private static String obtenerRutaDirecta() {
         File rutadirectorio = new File("src/main/resources");
         return rutadirectorio.getAbsoluteFile().toString();
     }
@@ -18,9 +18,9 @@ class ArchivoUsuarios{
      * @param objeto el objeto a guardar
      * @param nombrearchivo el nombre del archivo donde guardar el objeto*/
     static void escribirArchivo(Object objeto, String nombrearchivo) throws IOException, ClassNotFoundException{
-        String rutadirect = obtenerrutadirect();
+        String rutaDirecta = obtenerRutaDirecta();
         ObjectOutputStream outStream = null;
-        outStream = new ObjectOutputStream(new FileOutputStream(rutadirect + "/" + nombrearchivo));
+        outStream = new ObjectOutputStream(new FileOutputStream(rutaDirecta + "/" + nombrearchivo));
         outStream.writeObject(objeto);
         if (outStream != null)
             outStream.close();
@@ -29,7 +29,7 @@ class ArchivoUsuarios{
      * Busca un objeto en el archivo
      * @param nombrearchivo el nombre del archivo donde buscar el objeto*/
     static Object leerArchivo(String nombrearchivo) throws IOException, ClassNotFoundException {
-        String rutadirect = obtenerrutadirect();
+        String rutadirect = obtenerRutaDirecta();
         String filePath = rutadirect + "/" + nombrearchivo;
         Object objeto = null;
         // si el archivo está vacio, no lo abrimos

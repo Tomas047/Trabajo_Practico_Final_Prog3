@@ -9,24 +9,36 @@ import java.util.Objects;
  */
 
 public class Jugador implements Serializable {
-    private final static int precioMinimo = 300;
+    private final static int precioMinimo = 1000;
     @Serial
     private static final long serialVersionUID = 1L;
     private String nombre;
     private int precio;
-    private int edad;
-    private String posicion;
+    //private int edad;
+    //private String posicion;
     private Propiedades propiedades;
 
     ///MIRAR TEMAS DE STATUS Y POSICION
 
-    public Jugador(String nombre, int precio, int edad, String posicion, Propiedades propiedades){
+    public Jugador(String nombre, int precio, Propiedades propiedades){
         this.nombre = nombre;
         this.precio = precio;
-        this.edad = edad;
-        this.posicion = posicion;
+        //this.edad = edad;
+        //this.posicion = posicion;
         this.propiedades = propiedades;
     }
+
+    public Jugador(String nombre, Propiedades prop) {
+        this(nombre, precioMinimo, prop);
+    }
+/*
+    public Jugador(String nombre, int precio){
+        this(nombre, new Propiedades());
+    }
+
+    public Jugador(String nombre, int precio) {
+        this(nombre, precio, new Propiedades());
+    }*/
 
     ///Nombre ------------------------------
     public String getNombre(){
@@ -38,13 +50,13 @@ public class Jugador implements Serializable {
     }
 
     ///Edad --------------------------------
-    public int getEdad(){
-        return edad;
-    }
+    //public int getEdad(){
+    //    return edad;
+    //}
 
-    public void setEdad(int edad){
-        this.edad = edad;
-    }
+    //public void setEdad(int edad){
+    //    this.edad = edad;
+    //}
 
     ///Precio -----------------------------
     public int getPrecio(){
@@ -56,13 +68,13 @@ public class Jugador implements Serializable {
     }
 
     ///Posicion ----------------------------
-    public String getPosicion(){
-        return posicion;
-    }
+    //public String getPosicion(){
+     //   return posicion;
+    //}
 
-    public void setPosicion(String posicion){
-        this.posicion = posicion;
-    }
+    //public void setPosicion(String posicion){
+    //    this.posicion = posicion;
+   // }
 
     ///Puntos -----------------------------
     /**
@@ -79,6 +91,19 @@ public class Jugador implements Serializable {
      * @param p las nuevas propiedades a ser Sumadas*/
     public void asignar(Propiedades p){
         propiedades.asignar(p);
+    }
+
+    public void refresh(Propiedades p) {
+        propiedades.asignar(p);
+        precio = propiedades.calcularPrecio();
+    }
+
+    /**
+     * Metodo para el simulador.
+     * Carga el precio del jugador
+     * */
+    public void refreshPrecio(){
+        this.precio = propiedades.calcularPrecio();
     }
 
     @Override
@@ -98,10 +123,9 @@ public class Jugador implements Serializable {
 
     @Override
     public String toString(){
-        return getNombre() +
-                "\nPrecio: $" + getPrecio() +
-                "\nPosicion: " + getPosicion() +
-                "\nEdad: " + getEdad();
+        return "\n" + getNombre() + ", Precio: $" + getPrecio(); //+
+                //"\nPosicion: " + getPosicion() +
+                //"\nEdad: " + getEdad();
     }
 
     private void escribirObjeto(ObjectOutputStream out) throws IOException{
@@ -201,6 +225,17 @@ public class Jugador implements Serializable {
         }
 
         /**
+         * Se calcula el precio del jugador de manera ponderada
+         * @return entero con el valor*/
+        public int calcularPrecio() {
+            int total = precioMinimo;
+            total += goles * 100 * Valores.golesPenal.getPorcentajePrecio();
+            total += golesPenal * 100 * Valores.golesPenal.getPorcentajePrecio();
+            total += penalesAtajados * 100 * Valores.penalAtajado.getPorcentajePrecio();
+            return total;
+        }
+
+        /**
          * Se encarga de cambiar los valores que sean necesarios
          * @param p los nuevos valores*/
         void asignar(Propiedades p){
@@ -250,25 +285,30 @@ public class Jugador implements Serializable {
             return result;
         }
 
-
         /**
          * Encargado de contener los valores de cada propiedad*/
         public enum Valores{
-            goles(8),
-            golesPenal(3),
-            penalAtajado(4),
-            golesEnContra(-2),
-            tarjetaAmarilla(-2),
-            tarjetaRoja(-4);
+            goles(8, 0.4),
+            golesPenal(3, 0.2),
+            penalAtajado(4, 0.3),
+            golesEnContra(-2, 0),
+            tarjetaAmarilla(-2, 0),
+            tarjetaRoja(-4, 0);
 
             int valor;
+            double porcentajePrecio;
 
-            Valores(int valor){
+            Valores(int valor, double porcentajePrecio){
                 this.valor = valor;
+                this.porcentajePrecio = porcentajePrecio;
             }
 
             public int getValor(){
                 return valor;
+            }
+
+            public double getPorcentajePrecio(){
+                return porcentajePrecio;
             }
         }
     }

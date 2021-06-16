@@ -135,7 +135,7 @@ public class Admin extends Usuario{
 
     @Override
     public String toString() {
-        return "Administrator{" + "Nombre ='" + nombre + Arrays.toString(torneoDeUsuarios.keySet().toArray()) + '}';
+        return "Admin: " + nombre + Arrays.toString(torneoDeUsuarios.keySet().toArray());
     }
 
    	private void escribirObjeto(ObjectOutputStream out) throws IOException{
