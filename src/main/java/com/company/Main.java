@@ -2,13 +2,15 @@ package com.company;
 
 import com.company.Complementos.Posicion;
 import com.company.Exceptions.*;
-
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.io.IOException;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws ExisteNombreException, FondoInsuficienteException, EquipoCompletoException, IOException, ClassNotFoundException {
-        AdministracionUsuarios.cargarCuentas();
+       /* AdministracionUsuarios.cargarCuentas();
 
         // 50 equipos
         /*String[] nombreEquipos = new String[]{"Boca Juniors", "River Plate", "Independiente", "Racing", "San Lorenzo", "Estudiantes", "Velez", "Patronato", "Godoy Cruz", "Lanus", "Banfield", "Argentinos Juniors", "Huracan", "Ferro", "Aldosivi", "Alvarado", "Newells", "Rosario Central", "Real Madrid", "Barcelona", "Atletico de Madrid", "Sevilla", "Valencia", "Juventus", "Inter", "Milan", "Atalanta", "Napoli", "Bayern Munich", "Borussia Dortmund", "Schalke 04", "Manchester United", "Liverpool", "Manchester City", "Chelsea", "Tottenham", "PSG", "Olympique de Marsella", "Arsenal", "Talleres", "Belgrano", "Instituto", "Athletic de Bilbao", "Crotone", "Defensa y Justicia", "Benfica", "Atletico Mineiro", "Santos", "Cruzeiro", "Palmeiras"};
@@ -73,7 +75,7 @@ public class Main {
                     }
                 }
             }
-        }*/
+        }
 
         ArrayList<Admin> admins = AdministracionUsuarios.getAdmins();
         System.out.println("--- Manejo de admins ---");
@@ -84,13 +86,13 @@ public class Main {
 
         DT dt25 = new DT("Paton Bauza");
         Torneo torneito = new Torneo("Torneito", 23);
-        Admin gerdown = new Admin("Gerdown");
+        Admin carlito = new Admin("Carlito");
         AdministracionEquipo adminEquipo = dt25.getAdminEquipo();
 
 
         dt25.inscribirse(torneito);
-        gerdown.addTorneo(torneito);
-        gerdown.addDT("Torneito", dt25);
+        carlito.addTorneo(torneito);
+        carlito.addDT("Torneito", dt25);
 
         Presupuesto presu = dt25.getPresupuesto();
 
@@ -123,7 +125,7 @@ public class Main {
         //
         //        System.out.println(presu.getPresupuestoInicial(superligaArgentina))
 
-        dt25.comprar(torneito,admins.get(1).getTorneo(torneito.getNombre()).getEquipo("Boca Juniors").getListaJugadores().get(2));
+        /*dt25.comprar(torneito,admins.get(1).getTorneo(torneito.getNombre()).getEquipo("Boca Juniors").getListaJugadores().get(2));
         presu.comprar(torneito, admins.get(1).getTorneo(torneito.getNombre()).getEquipo("Boca Juniors").getListaJugadores().get(2));
 
         System.out.println("Mi presupuesto actual es: $" + dt25.getPresupuesto().getPresupuestoInicial(torneito));
@@ -168,8 +170,13 @@ public class Main {
         //System.out.println();
 
         System.out.println("--- MANEJO DE  ----");
-*/
+
         AdministracionUsuarios.guardarCuenta();
+*/
+        Formulario formulario1 = new Formulario();
+        formulario1.setBounds(0,0,400,250);
+        formulario1.setVisible(true);
+        formulario1.setLocationRelativeTo(null);
     }
 }
 

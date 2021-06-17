@@ -39,6 +39,7 @@ class ArchivoUsuarios{
             objeto = inputStream.readObject();
             inputStream.close();
         }
+
         return objeto;
     }
 }

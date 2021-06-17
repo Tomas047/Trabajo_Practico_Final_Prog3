@@ -25,6 +25,7 @@ public class Torneo implements Serializable {
         this.equipos = equipos;
     }*/
 
+
     public Torneo(Torneo t) {
         this(t.getNombre(), t.getMaxJugadores());
         equipos.addAll(t.getEquipos());
