@@ -32,6 +32,8 @@ public class Main{
         //System.out.println(admins.get(0).getDTsOrdenados(admins.get(0).getTorneo("Superliga A George")));
         //System.out.println(admins.get(0).getTorneo("Superliga A George"));
 
+
+        //guardarCuenta();
     }
 }
 
@@ -171,9 +173,18 @@ class Formulario extends JFrame implements ActionListener {
         }
         if(e.getSource()==buscarDt){
             System.out.println("Buscar Dt");
+            Usuario ex = getCuenta(JOptionPane.showInputDialog("Ingrese DT a buscar"));
+
+            if (ex == null){
+                System.out.println("Usuario no existe");
+            }else System.out.println(ex);
+
         }
         if(e.getSource()==listaDeDTS){
             System.out.println("Lista de Dts");
+            ArrayList<Usuario> ex = getUsuarios();
+            ex.forEach((n) -> System.out.println(n.getNombre()));
+
         }
         if(e.getSource()==comprar){
             System.out.println("Comprar");
@@ -213,7 +224,7 @@ class Formulario extends JFrame implements ActionListener {
         }
         if(e.getSource()==existeTorneo){
             System.out.println("Existe un Torneo");
-            ArrayList<Admin> admins = new ArrayList<Admin>();
+            ArrayList<Admin> admins;
             try {
                 cargarCuentas();
             } catch (IOException ioException) {
@@ -229,12 +240,12 @@ class Formulario extends JFrame implements ActionListener {
 
             ///como buscar torneo
 
-            while (i < admins.size() && rta == false){
+            while (i < admins.size() && !rta){
                 rta = admins.get(i).existeTorneo(t);
                 i++;
             }
 
-            if(rta == true){
+            if(rta){
                 System.out.println("El torneo existe");
             }else{
                 System.out.println("El torneo no existe");
@@ -254,7 +265,7 @@ class Formulario extends JFrame implements ActionListener {
         }
         if(e.getSource()==nombreDeTorneo){
             System.out.println("Nombre del Torneo");
-            ArrayList<Admin> admins = new ArrayList<Admin>();
+            ArrayList<Admin> admins;
             try {
                 cargarCuentas();
             } catch (IOException ioException) {
@@ -282,7 +293,7 @@ class Formulario extends JFrame implements ActionListener {
         }
         if(e.getSource()==adminTorneo){
             System.out.println("Administrar Torneo");
-            ArrayList<Admin> admins = new ArrayList<Admin>();
+            ArrayList<Admin> admins;
             try {
                 cargarCuentas();
             } catch (IOException ioException) {
@@ -337,7 +348,7 @@ class Formulario extends JFrame implements ActionListener {
         }
         if(e.getSource()==setProp){
             System.out.println("Setear Propiedades");
-            ArrayList<Admin> admins = new ArrayList<Admin>();
+            ArrayList<Admin> admins;
             try {
                 cargarCuentas();
             } catch (IOException ioException) {

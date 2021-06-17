@@ -1,9 +1,7 @@
 package com.company;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
+import java.nio.file.attribute.UserDefinedFileAttributeView;
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -14,9 +12,10 @@ import static com.company.ArchivoUsuarios.*;
  */
 
 public class AdministracionUsuarios implements Serializable{
+    @Serial
     private static final long serialVersionUID = 1L;
 
-    public static ArrayList<Usuario> usuarios;
+    public static ArrayList<Usuario> usuarios = new ArrayList<>();
     private static Usuario usuario;
 
     /**
@@ -36,6 +35,13 @@ public class AdministracionUsuarios implements Serializable{
                 aux.add((Admin)u);
         }
         return aux;
+    }
+
+    /**
+     * Retrona una lista de los administradores.
+     */
+    public static ArrayList<Usuario> getUsuarios(){
+        return usuarios;
     }
 
     /**
@@ -72,7 +78,7 @@ public class AdministracionUsuarios implements Serializable{
      * Retorna una cuenta especifica
      * @param nombreUsuario El nombre de la cuenta
      */
-    private static Usuario getCuenta(String nombreUsuario){
+    public static Usuario getCuenta(String nombreUsuario){
         for (Usuario aux: usuarios) {
             if (aux.getNombre().equals(nombreUsuario))
                 return aux;
@@ -104,7 +110,7 @@ public class AdministracionUsuarios implements Serializable{
      * */
 
     public static boolean esDT() {
-        return usuario != null && usuario instanceof DT;
+        return usuario instanceof DT;
     }
 
     /**
@@ -114,7 +120,7 @@ public class AdministracionUsuarios implements Serializable{
         ArrayList<DT> usuarios = null;
         for (Usuario usuario : AdministracionUsuarios.usuarios) {
             if (usuario instanceof Admin) {
-                Admin admin = (Admin) usuario;
+                var admin = (Admin) usuario;
                 if (admin.existeTorneo(t)) {
                     usuarios = admin.getDTsOrdenados(t);
                     break;
