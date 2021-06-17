@@ -3,7 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/*
 class Formulario extends JFrame implements ActionListener{
     //Menus
     private JMenuBar menubar;
@@ -136,6 +136,7 @@ class Formulario extends JFrame implements ActionListener{
 
         if(e.getSource()==crearDt){
             System.out.println("Crear Dt");
+            AdministracionUsuarios.crearDT(JOptionPane.showInputDialog("Ingrese un nombre de usuario"));
         }
         if(e.getSource()==buscarDt){
             System.out.println("Buscar Dt");
@@ -219,4 +220,4 @@ class Formulario extends JFrame implements ActionListener{
             System.out.println("Agrega un Jugador");
         }
     }
-}
+}*/

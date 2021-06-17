@@ -65,7 +65,8 @@ public class Admin extends Usuario{
      * @return
      */
     public ArrayList<DT> getDTsOrdenados(Torneo t) {
-        ArrayList<DT> usuarios = torneoDeUsuarios.get(t);
+        ArrayList<DT> usuarios = new ArrayList<DT>();
+        usuarios =  torneoDeUsuarios.get(t);
         usuarios.sort(new Comparator<DT>() {
             @Override
             public int compare(DT dt1, DT dt2) {
@@ -83,6 +84,14 @@ public class Admin extends Usuario{
     public boolean existeTorneo(Torneo t) {
         return torneoDeUsuarios.containsKey(t);
     }
+
+    /*public boolean buscarTorneo(String nombre){
+        for(ClubReal equipo : equipos) {
+            if (club.equals(equipo))
+                return true;
+        }
+        return false;
+    }*/
 
     /**
      * Agrega un Dt a un torneo.

@@ -8,177 +8,382 @@ import java.awt.event.*;
 import java.io.IOException;
 import java.util.*;
 
-public class Main {
-    public static void main(String[] args) throws ExisteNombreException, FondoInsuficienteException, EquipoCompletoException, IOException, ClassNotFoundException {
-       /* AdministracionUsuarios.cargarCuentas();
+import static com.company.AdministracionUsuarios.*;
 
-        // 50 equipos
-        /*String[] nombreEquipos = new String[]{"Boca Juniors", "River Plate", "Independiente", "Racing", "San Lorenzo", "Estudiantes", "Velez", "Patronato", "Godoy Cruz", "Lanus", "Banfield", "Argentinos Juniors", "Huracan", "Ferro", "Aldosivi", "Alvarado", "Newells", "Rosario Central", "Real Madrid", "Barcelona", "Atletico de Madrid", "Sevilla", "Valencia", "Juventus", "Inter", "Milan", "Atalanta", "Napoli", "Bayern Munich", "Borussia Dortmund", "Schalke 04", "Manchester United", "Liverpool", "Manchester City", "Chelsea", "Tottenham", "PSG", "Olympique de Marsella", "Arsenal", "Talleres", "Belgrano", "Instituto", "Athletic de Bilbao", "Crotone", "Defensa y Justicia", "Benfica", "Atletico Mineiro", "Santos", "Cruzeiro", "Palmeiras"};
-        String[] apellidos = new String[]{"Castro", "Rodriguez", "Perez", "Contreras", "Eguzquiza", "Ledesma", "Castillo", "Vega", "Villalba", "Arias", "Navarro", "Barrios", "Soria", "Alvarado", "Lozano", "James", "Basualdo", "Bedoya", "Martinez", "Orsini", "Pauletta", "Gomez", "Nani", "Sanchez", "Alvarez", "Segovia", "Mura", "Jurado", "Lerner", "Balvin", "Alvear", "Cardona", "Fabra", "Riquelme", "Tevez", "Lapadula", "Silva", "Antunes", "Castroman", "Heimer", "Soraka", "Rey", "Reyes", "Leon", "Nuñez", "Melgarejo", "Lopez"};
-        String[] nombresAdmins = new String[]{"George", "SangreXeneixe", "Norbert", "Futbol360", "DeporTV"};
-        String[] nombresTorneos = new String[]{"Copa A", "Copa B", "Superliga A", "Superliga B"};
-        String[] nombres = new String[]{"Diego", "German", "Mateo", "Daniel", "Martin", "Juani", "Leo", "Eliseo", "Danilo", "Nicolas", "Pablo", "Alvaro", "Adrian", "David", "Javier", "Mario", "Sergio", "Marcos", "Manuel", "Jorge", "Axel", "Luke", "Julian", "Benjamin", "Dante","Gerardo","Facundo","Sixto","Germán","Felipe","Santiago","Javier","Wilfredo","Cristóbal","Simón","Feliciano","Pedro","Julián","Leonardo","Joaquín","Domigo","Fernando","Ignacio","Gregorio","Beltrán","Tobías","Teodoro","Guillermo","David","Agustín","Eduardo","Darío","Lázaro","Ismael","Salvador","Alejo","Jesús","Constantino","Gonzalo","Elías","Federico","Dimas","Tomás","Juan","Félix","Alberto","Francisco","Cayetano","Sebastián","Ernesto","Isaías","Camilo","Valerio","Jorge","Humberto","Enrique","Jonás","Abrahám","Isaac","Tylor","Robert","Kurtis","Bryan","Peter","Cameron","Andy","Benny","Emilio","Zacarías","Bruno","Dámaso","Damián","Emiliano","Alexander","John","Jeremy","Charlie","Dexter","Dean","Oswald","Mitchell","Howard","Luke","Roger","Donald","Christian","Zac","Salvatore","Valentino","Paulino","Fabiano","Luigi","Lazzaro","Alessandro","Giacomo","Emiliano","Donatello","Agostino","Cecilio","Luciano","Massimo","Silvano","Riccardo","Flavio","Damiano","Iker","Asier","Fermin","Ibai", "Marco", "Andrea", "Ariel", "Fabricio", "Santino", "Adriano", "Carlo", "Federico", "Donato", "Giovanni", "Lorenzo", "Leonardo", "Ulises", "Hipolito", "Luis Miguel", "Aaron", "Abel", "Ismael", "Abraham", "Agustino", "Simon", "Alcides", "Aldo", "Alex", "Alejo", "Aleph", "Alesio", "Alessandro", "Alfredo", "Alan", "Alvaro", "Amadeo", "Amancio", "Amilcar", "Anacleto", "Anibal", "Anselmo", "Aparicio", "Julio Argentino", "Benjamin", "Blas", "Connor", "Dan", "Dante", "Dariel", "Eithan", "Eladio", "Nahitan", "Fernan", "Filipe", "Felipe", "Flavio", "Guido"};
-        //String[] paises = new String[]{"Afganistán","Kabul","Asia","Albania","Tirana","Europa","Alemania","Berlín","Europa","Andorra","Andorra la Vieja","Europa","Angola","Luanda","África","Antigua y Barbuda","Saint John","América","Arabia Saudita","Riad","Asia","Argelia","Argel","África","Argentina","Buenos Aires","América","Armenia","Ereván","Asia","Australia","Canberra","Oceanía","Austria","Viena","Europa","Azerbaiyán","Bakú","Asia","Bahamas","Nasáu","América","Bangladés","Daca","Asia","Barbados","Bridgetown","América","Baréin","Manama","Asia","Bélgica","Bruselas","Europa"};
-
-        ArrayList<String> hombre = new ArrayList<>();
-
-        for (int i = 0; i < nombres.length; i++) {
-            for (int j = 0; j < apellidos.length; j++) {
-                hombre.add(nombres[i] + " " + apellidos[j]);
-            }
-        }
-        Collections.shuffle(hombre);
-
-        for (String nombreAdmin:nombresAdmins) {
-            AdministracionUsuarios.crearAdmin(nombreAdmin);
-        }
-
-        Random rand = new Random();
-
-        int j = 0;
-        int p = 0;
-        ArrayList<Admin> admins = AdministracionUsuarios.getAdmins();
-        for (Admin admin : admins) {
-            for (String nombreTorneo:nombresTorneos) {
-                int maxJug = rand.nextInt(7) + 5; // min 5 ,max 5+7
-                Torneo torneo = new Torneo(nombreTorneo + " " + admin.getNombre(), maxJug);
-                for (int k = 0; k < 6; k++) {
-                    j = j == 49 ? 0 : j;
-                    //p = p == 53 ? 0 : p;
-                    //String pais = paises[p++];
-                    torneo.addClub(new ClubReal(nombreEquipos[j++], torneo.getMaxJugadores()));
-                }
-                admin.addTorneo(torneo);
-            }
-        }
-
-        int i = 0;
-        for (Admin admin : admins) {
-            Set<Torneo> torneos = admin.getTorneo();
-            for (Torneo torneo:torneos) {
-                ArrayList<ClubReal> equipos = torneo.getEquipos();
-                int maxJugadores = torneo.getMaxJugadores();
-                for (ClubReal equipo : equipos) {
-                    for (int k = 0; k < maxJugadores; k++) {
-                        try{
-                            i = i == 14*18 ? 0 : i;
-                            Jugador.Propiedades prop = new Jugador.Propiedades();
-                            for (int l = 0; l < 7; l++) {
-                                prop.setPropiedad(l, rand.nextInt(25));
-                            }
-                            Jugador jugador = new Jugador(hombre.get(i++), prop);
-                            jugador.refreshPrecio();
-                            equipo.addJugador(jugador);
-                        }catch (ExisteNombreException e){
-                            System.out.println("SALTA\n"); ///Si salta es porque hay pocos nombres cargados
-                        }
-                    }
-                }
-            }
-        }
-
-        ArrayList<Admin> admins = AdministracionUsuarios.getAdmins();
-        System.out.println("--- Manejo de admins ---");
-
-        for(int m = 0; m < admins.size(); m++){
-            System.out.println("\n" + admins.get(m) + "\n");
-        }
-
-        DT dt25 = new DT("Paton Bauza");
-        Torneo torneito = new Torneo("Torneito", 23);
-        Admin carlito = new Admin("Carlito");
-        AdministracionEquipo adminEquipo = dt25.getAdminEquipo();
-
-
-        dt25.inscribirse(torneito);
-        carlito.addTorneo(torneito);
-        carlito.addDT("Torneito", dt25);
-
-        Presupuesto presu = dt25.getPresupuesto();
-
-        /* DT dt1 = new DT("Diego Contreras");
-        //
-        //        Torneo superligaArgentina = new Torneo("Superliga Argentina", 23);
-        //
-        //        dt1.inscribirse(superligaArgentina);
-        //
-        //        System.out.println(dt1.estaInscripto(superligaArgentina));
-        //
-        //        System.out.println(dt1.getPuntos(superligaArgentina) + " puntos.");
-        //
-        //        Presupuesto presu = dt1.getPresupuesto();
-        //
-        //        System.out.println("$" + presu.getPresupuestoInicial(superligaArgentina));*/
-        //
-        //        ///Asignarle una posicion a cada equipito
-        //
-        //       /* System.out.println(presu.consultarCompra(superligaArgentina, listaDeClubes.get(1).listaJugadores.get(1)));
-        //
-        //        presu.setPresupuestoInicial(superligaArgentina);
-        //
-        //        System.out.println("$" + presu.getPresupuestoInicial(superligaArgentina));*/
-        //
-        //        //AdministracionEquipo adminEquipo = dt1.getAdminEquipo();
-        //
-        //        /*dt1.comprar(superligaArgentina, boca.listaJugadores.get(2));
-        //        presu.comprar(superligaArgentina, boca.listaJugadores.get(2));
-        //
-        //        System.out.println(presu.getPresupuestoInicial(superligaArgentina))
-
-        /*dt25.comprar(torneito,admins.get(1).getTorneo(torneito.getNombre()).getEquipo("Boca Juniors").getListaJugadores().get(2));
-        presu.comprar(torneito, admins.get(1).getTorneo(torneito.getNombre()).getEquipo("Boca Juniors").getListaJugadores().get(2));
-
-        System.out.println("Mi presupuesto actual es: $" + dt25.getPresupuesto().getPresupuestoInicial(torneito));
-       /* System.out.println("Nombre Admin: " + admins.get(1).getNombre());
-
-        System.out.println(admins.get(1).getTorneo("Copa B"));
-
-        Admin diego = new Admin("Diego Contreras");
-
-        //System.out.println(diego.crearTorneo("Superligarcha", 23));
-
-
-        System.out.println("--- Manejo de torneos y admins ---");
-
-        Torneo torneito = new Torneo("Torneito", 23);
-        DT dt1 = new DT("Carlos Bianchi");
-        DT dt2 = new DT("Miguel Angel Russo");
-        //ClubReal allBoys = new ClubReal("All Boys", );
-
-        diego.addTorneo(torneito);
-        diego.addDT("Torneito", dt1);
-        diego.addDT("Torneito", dt2);
-
-        System.out.println(diego.existeTorneo(torneito));
-
-        ArrayList<DT> arregloDT = new ArrayList<DT>();
-
-        arregloDT = diego.getDTsOrdenados(torneito);
-
-        for(int x=0; x < arregloDT.size(); x++){
-            System.out.println("\n" + arregloDT.get(x) + "\n");
-        }
-
-        torneito.setAdmin(diego);
-
-        System.out.println("Nombre Torneo: " + torneito.getNombre());
-
-        System.out.println("Max Jugadores: " + torneito.getMaxJugadores());
-
-        System.out.println("ADMIN torneo: " + torneito.getAdmin());
-
-        //System.out.println();
-
-        System.out.println("--- MANEJO DE  ----");
-
-        AdministracionUsuarios.guardarCuenta();
-*/
+public class Main{
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        //cargarCuentas();
         Formulario formulario1 = new Formulario();
         formulario1.setBounds(0,0,400,250);
         formulario1.setVisible(true);
         formulario1.setLocationRelativeTo(null);
+
+        //ArrayList<ClubReal> equipos = new ArrayList<ClubReal>();
+        //ArrayList<Admin> admins = getAdmins();
+
+        /*System.out.println("Archivo de Admins:");
+        for(int m = 0; m < admins.size(); m++){
+            System.out.println("\n" + admins.get(m) + "\n");
+        }
+*/
+
+
+        //System.out.println(admins.get(0).getNombre());
+        //System.out.println(admins.get(0).getDTsOrdenados(admins.get(0).getTorneo("Superliga A George")));
+        //System.out.println(admins.get(0).getTorneo("Superliga A George"));
+
     }
 }
+
+class Formulario extends JFrame implements ActionListener {
+    //Menus
+    private JMenuBar menubar;
+    private JMenu menuUsuario,menuAdministrador,menuTorneo, menuJugador, menuClub;
+    private JMenuItem crearDt, buscarDt, listaDeDTS, comprar, vender, inscTorneo, estaInscripto, verPresu, verPuntos,
+            crearAdmin, buscarAdmin, retorTorneo, agregarTorneo, crearTorneo, ordenDt, existeTorneo, agregarDT, agregarClub,
+            buscarClub, crearTorneo2, nombreDeTorneo, adminTorneo, crearJug, setProp, calcPuntos, crearClub, vernombre, agregarJug;
+
+    public Formulario() {
+        setLayout(null);
+        menubar = new JMenuBar();
+        setJMenuBar(menubar);
+
+        menuUsuario = new JMenu("Usuarios");
+        menubar.add(menuUsuario);
+
+        menuAdministrador = new JMenu("Administrador");
+        menubar.add(menuAdministrador);
+
+        menuTorneo = new JMenu("Torneo");
+        menubar.add(menuTorneo);
+
+        menuJugador = new JMenu("Jugador");
+        menubar.add(menuJugador);
+
+        menuClub = new JMenu("Club");
+        menubar.add(menuClub);
+
+
+//submenus
+        //Usuario
+        crearDt = new JMenuItem("Crear un Dt");
+        crearDt.addActionListener(this);
+        menuUsuario.add(crearDt);
+        buscarDt = new JMenuItem("Buscar Dt");
+        buscarDt.addActionListener(this);
+        menuUsuario.add(buscarDt);
+        listaDeDTS = new JMenuItem("Lista de DTs");
+        listaDeDTS.addActionListener(this);
+        menuUsuario.add(listaDeDTS);
+        comprar = new JMenuItem("Comprar");
+        comprar.addActionListener(this);
+        menuUsuario.add(comprar);
+        vender = new JMenuItem("Vender");
+        vender.addActionListener(this);
+        menuUsuario.add(vender);
+        inscTorneo = new JMenuItem("Inscripcion");
+        inscTorneo.addActionListener(this);
+        menuUsuario.add(inscTorneo);
+        verPresu = new JMenuItem("Presupuesto");
+        verPresu.addActionListener(this);
+        menuUsuario.add(verPresu);
+        verPuntos = new JMenuItem("Puntos");
+        verPuntos.addActionListener(this);
+        menuUsuario.add(verPuntos);
+        estaInscripto = new JMenuItem("Esta Inscripto");
+        estaInscripto.addActionListener(this);
+        menuUsuario.add(estaInscripto);
+
+        //Administracion
+        crearAdmin = new JMenuItem("Crear Administrador");
+        crearAdmin.addActionListener(this);
+        menuAdministrador.add(crearAdmin);
+        buscarAdmin = new JMenuItem("Buscar Administrador");
+        buscarAdmin.addActionListener(this);
+        menuAdministrador.add(buscarAdmin);
+        retorTorneo = new JMenuItem("Devuelve Torneo");
+        retorTorneo.addActionListener(this);
+        menuAdministrador.add(retorTorneo);
+        agregarTorneo = new JMenuItem("Agregar Torneo");
+        agregarTorneo.addActionListener(this);
+        menuAdministrador.add(agregarTorneo);
+        crearTorneo = new JMenuItem("Crear Torneo");
+        crearTorneo.addActionListener(this);
+        menuAdministrador.add(crearTorneo);
+        ordenDt = new JMenuItem("Ordenar y ver Dts");
+        ordenDt.addActionListener(this);
+        menuAdministrador.add(ordenDt);
+        existeTorneo = new JMenuItem("¿Existe el Torneo?");
+        existeTorneo.addActionListener(this);
+        menuAdministrador.add(existeTorneo);
+        agregarDT = new JMenuItem("Agregar Dt");
+        agregarDT.addActionListener(this);
+        menuAdministrador.add(agregarDT);
+
+        //Torneo
+        agregarClub = new JMenuItem("Agregar Club");
+        agregarClub.addActionListener(this);
+        menuTorneo.add(agregarClub);
+        buscarClub = new JMenuItem("Buscar Club");
+        buscarClub.addActionListener(this);
+        menuTorneo.add(buscarClub);
+        crearTorneo2 = new JMenuItem("Crear Torneo2");
+        crearTorneo2.addActionListener(this);
+        menuTorneo.add(crearTorneo2);
+        nombreDeTorneo = new JMenuItem("Nombre del Torneo");
+        nombreDeTorneo.addActionListener(this);
+        menuTorneo.add(nombreDeTorneo);
+        adminTorneo = new JMenuItem("Administrar Torneo");
+        adminTorneo.addActionListener(this);
+        menuTorneo.add(adminTorneo);
+
+        //Jugador
+        crearJug = new JMenuItem("Crear Jugador");
+        crearJug.addActionListener(this);
+        menuJugador.add(crearJug);
+        setProp= new JMenuItem("Setear Propiedad");
+        setProp.addActionListener(this);
+        menuJugador.add(setProp);
+        calcPuntos = new JMenuItem("Calcular Puntos");
+        calcPuntos.addActionListener(this);
+        menuJugador.add(calcPuntos);
+
+        //Club Real
+        crearClub = new JMenuItem("Crear Club");
+        crearClub.addActionListener(this);
+        menuClub.add(crearClub);
+        vernombre = new JMenuItem("Ver Nombre");
+        vernombre.addActionListener(this);
+        menuClub.add(vernombre);
+        agregarJug = new JMenuItem("Agregar Jugador");
+        agregarJug.addActionListener(this);
+        menuClub.add(agregarJug);
+
+        Container fondo = this.getContentPane();
+        fondo.setBackground(new Color(0,150,0));
+    }
+
+    public void actionPerformed (ActionEvent e) {
+
+        if(e.getSource()==crearDt){
+            System.out.println("Crear Dt");
+            crearDT(JOptionPane.showInputDialog("Ingrese un nombre de usuario"));
+        }
+        if(e.getSource()==buscarDt){
+            System.out.println("Buscar Dt");
+        }
+        if(e.getSource()==listaDeDTS){
+            System.out.println("Lista de Dts");
+        }
+        if(e.getSource()==comprar){
+            System.out.println("Comprar");
+        }
+        if(e.getSource()==vender){
+            System.out.println("Vender");
+        }
+        if(e.getSource()==inscTorneo){
+            System.out.println("Inscribir Torneo");
+        }
+        if(e.getSource()==estaInscripto){
+            System.out.println("Esta Inscripto?");
+        }
+        if(e.getSource()==verPresu){
+            System.out.println("Ver Presupuesto");
+        }
+        if(e.getSource()==verPuntos){
+            System.out.println("Ver Puntos");
+        }
+        if(e.getSource()==crearAdmin){
+            System.out.println("Crear Administrador");
+        }
+        if(e.getSource()==buscarAdmin){
+            System.out.println("Buscar Administrador");
+        }
+        if(e.getSource()==retorTorneo){
+            System.out.println("Retorna un Torneo");
+        }
+        if(e.getSource()==agregarTorneo){
+            System.out.println("Agregar Torneo");
+        }
+        if(e.getSource()==crearTorneo){
+            System.out.println("Crear un Torneo");
+        }
+        if(e.getSource()==ordenDt){
+            System.out.println("Ordenar Dts por puntos");
+        }
+        if(e.getSource()==existeTorneo){
+            System.out.println("Existe un Torneo");
+            ArrayList<Admin> admins = new ArrayList<Admin>();
+            try {
+                cargarCuentas();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            } catch (ClassNotFoundException classNotFoundException) {
+                classNotFoundException.printStackTrace();
+            }
+            admins = getAdmins();
+            String nombre = JOptionPane.showInputDialog("Ingrese el nombre del torneo a buscar:");
+            Torneo t = null;
+            int i = 0;
+            boolean rta = false;
+
+            ///como buscar torneo
+
+            while (i < admins.size() && rta == false){
+                rta = admins.get(i).existeTorneo(t);
+                i++;
+            }
+
+            if(rta == true){
+                System.out.println("El torneo existe");
+            }else{
+                System.out.println("El torneo no existe");
+            }
+        }
+        if(e.getSource()==agregarDT){
+            System.out.println("Agrega un Dt");
+        }
+        if(e.getSource()==agregarClub){
+            System.out.println("Agrega un Club");
+        }
+        if(e.getSource()==buscarClub){
+            System.out.println("Busca un Club");
+        }
+        if(e.getSource()==crearTorneo2){
+            System.out.println("Crea un Torneo - Forma 2");
+        }
+        if(e.getSource()==nombreDeTorneo){
+            System.out.println("Nombre del Torneo");
+            ArrayList<Admin> admins = new ArrayList<Admin>();
+            try {
+                cargarCuentas();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            } catch (ClassNotFoundException classNotFoundException){
+                classNotFoundException.printStackTrace();
+            }
+            admins = getAdmins();
+            String nombre = JOptionPane.showInputDialog("Ingrese el nombre del admnistrador del torneo a buscar: ");
+            Torneo t = null;
+
+            int i = 0;
+            while (i < admins.size() && t == null){
+                if(admins.get(i).getNombre().equals(nombre)){
+                    t = admins.get(i).getTorneo(nombre);
+                }
+                i++;
+            }
+
+            if(t != null){
+                System.out.println("El nombre del torneo administrado por " + admins.get(i).getNombre() + " es " + t.getNombre());
+            }else{
+                System.out.println("El Admin no fue encontrado");
+            }
+        }
+        if(e.getSource()==adminTorneo){
+            System.out.println("Administrar Torneo");
+            ArrayList<Admin> admins = new ArrayList<Admin>();
+            try {
+                cargarCuentas();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            } catch (ClassNotFoundException classNotFoundException) {
+                classNotFoundException.printStackTrace();
+            }
+            admins = getAdmins();
+            //String nombre = JOptionPane.showInputDialog("Ingrese el nombre del torneo a buscar:");
+            Torneo t;
+            int i = 0;
+
+            //while (i < admins.size() && t == null){
+               // if(admins.get(i).getTorneo(nombre).equals(nombre)){
+                    t = admins.get(0).getTorneo("Superliga A George");
+                //}
+                //i++;
+            //}
+
+            System.out.println(t.getNombre());
+            //Admin admin1 = t.getAdmin();
+            //if(t != null){
+               // System.out.println("Nombre del Administrador del Torneo: " + admin1.getNombre());
+            //}else{
+                //System.out.println("El torneo buscado no existe");
+           // }
+
+            //System.out.println(admins.get(0).getNombre());
+            //System.out.println(admins.get(0).getDTsOrdenados(admins.get(0).getTorneo("Superliga A George")));
+            //System.out.println(admins.get(0).getTorneo("Superliga A George"));
+        }
+        if(e.getSource()==crearJug){ ////FALTA AGREGARLO A UN CLUB PARA QUE HAGA LO NECESARIO PARA METERSE AL ARCHIVO
+            System.out.println("Crear Jugador");
+            String nombre = JOptionPane.showInputDialog("Ingrese el nombre del jugador: ");
+            int precio = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio del jugador: "));
+            Jugador.Propiedades p;
+            String rta = JOptionPane.showInputDialog("Desea cargar las propiedades del jugador?: s/n");
+            if(rta.equals("s")) {
+                int goles = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles del jugador: "));
+                int golesPenal = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles de penal del jugador: "));
+                int golesEnContra = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los goles en contra del jugador: "));
+                int penalesAtajados = Integer.parseInt(JOptionPane.showInputDialog("Ingrese los penales atajados del jugador: "));
+                int amarillas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las amarillas recibidas del jugador: "));
+                int rojas = Integer.parseInt(JOptionPane.showInputDialog("Ingrese las rojas recibidas del jugador: "));
+                p = new Jugador.Propiedades(goles, golesPenal, golesEnContra, penalesAtajados, amarillas, rojas);
+            }else{
+                p = new Jugador.Propiedades();
+            }
+
+            Jugador nuevo = new Jugador(nombre, precio, p);
+            System.out.println(nuevo);
+        }
+        if(e.getSource()==setProp){
+            System.out.println("Setear Propiedades");
+            ArrayList<Admin> admins = new ArrayList<Admin>();
+            try {
+                cargarCuentas();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            } catch (ClassNotFoundException classNotFoundException) {
+                classNotFoundException.printStackTrace();
+            }
+            admins = getAdmins();
+
+            String nombre = JOptionPane.showInputDialog("Ingrese el jugador a modificar");
+
+            admins.get(0).getTorneo("Superliga A George").getEquipos().get(0).getListaJugadores().get(0).getNombre();
+            //admins.get(0).getTorneo("Superliga A George").getEquipos().get(0).getListaJugadores().get(0).;
+
+            //        ///Prueba Jugador
+            //        Jugador.Propiedades p = new Jugador.Propiedades();
+            //        p.setPropiedad(1, 1);
+            //        p.setPropiedad(4, 2);
+            //        p.setPropiedad(0, 3);
+            //        jugador1.asignar(p);
+            //
+            //        System.out.println(jugador1.getPuntos() + " PUNTOS.");
+            //
+            //        System.out.println("Goles: " + p.getPropiedad(0));
+            //        System.out.println("Goles Penal: " + p.getPropiedad(1));
+            //        System.out.println("Goles en contra: " + p.getPropiedad(2));
+            //        System.out.println("Penales Atajados: " + p.getPropiedad(3));
+            //        System.out.println("Amarillas: " + p.getPropiedad(4));
+            //        System.out.println("Rojas: " + p.getPropiedad(5));
+
+        }
+        if(e.getSource()==calcPuntos){
+            System.out.println("Calcular Puntos");
+        }
+        if(e.getSource()==crearClub){
+            System.out.println("Crear un Club");
+        }
+        if(e.getSource()==vernombre){
+            System.out.println("Ver Nombre");
+        }
+        if(e.getSource()==agregarJug){
+            System.out.println("Agrega un Jugador");
+        }
+    }
+}
+
 
 
 
