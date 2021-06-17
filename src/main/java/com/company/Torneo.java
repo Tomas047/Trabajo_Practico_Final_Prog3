@@ -85,7 +85,7 @@ public class Torneo implements Serializable {
     }
 
     /**
-     * Transifiere la inoracion nueva subia por el adminsitrador a los equipos del torneo
+     * Transifiere la informacion nueva subida por el adminsitrador a los equipos del torneo
      * @param datosEquipos informacion ed ada equipo
      * */
     void actualizar(Map<String, Map<String, Jugador.Propiedades>> datosEquipos) {

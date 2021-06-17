@@ -1,6 +1,6 @@
 
 *Boca Juniors
-
+-
 Agustin Rossi
 25
 Arquero
@@ -55,9 +55,9 @@ Sebastian Villa
 25
 Delantero
 7500
--
-*River
 
+*River
+-
 Franco Armani
 32
 Arquero
@@ -112,9 +112,9 @@ Matias Suarez
 32
 Delantero
 6000
--
-*Independiente
 
+*Independiente
+-
 Sebastian Sosa
 34
 Arquero
@@ -169,9 +169,9 @@ Silvio Romero
 30
 Delantero
 1600
--
-*Racing
 
+*Racing
+-
 Gabriel Arias
 32
 Arquero
@@ -226,9 +226,9 @@ Enzo Copetti
 25
 Delantero
 4500
--
-*Estudiantes
 
+*Estudiantes
+-
 Mariano Andujar
 37
 Arquero
@@ -283,9 +283,9 @@ Martin Cauteruccio
 32
 Delantero
 3700
--
-*Velez Sarsfield
 
+*Velez Sarsfield
+-
 Lucas Hoyos
 32
 Arquero
@@ -340,9 +340,9 @@ Cristian Tarragona
 30
 Delantero
 1600
--
-*San Lorenzo
 
+*San Lorenzo
+-
 Sebastian Torrico
 41
 Arquero
@@ -397,9 +397,9 @@ Angel Romero
 28
 Delantero
 6500
--
-*Rosario Central
 
+*Rosario Central
+-
 Jorge Broun
 35
 Arquero
@@ -454,9 +454,9 @@ Marcos Ruben
 35
 Delantero
 6000
--
-*Newell's Old Boys
 
+*Newell's Old Boys
+-
 Alan Aguerre
 30
 Arquero
@@ -511,9 +511,9 @@ Ignacio Scoco
 36
 Delantero
 5100
--
-*Huracan
 
+*Huracan
+-
 Facundo Cambaceres
 24
 Arquero
@@ -568,9 +568,9 @@ Andres Chavez
 30
 Delantero
 3500
--
-*Argentinos
 
+*Argentinos
+-
 Lucas Chavez
 25
 Arquero
@@ -625,9 +625,9 @@ Gabriel Hauche
 34
 Delantero
 5000
--
-*Godoy Cruz
 
+*Godoy Cruz
+-
 Fabian Assmann
 35
 Arquero
@@ -682,9 +682,9 @@ Malcom Braida
 24
 Delantero
 2200
--
-*Godoy Cruz
 
+*Godoy Cruz
+-
 Nelson Ibañez
 38
 Arquero
@@ -739,9 +739,9 @@ Matias Ramirez
 22
 Delantero
 1500
--
-*Banfield
 
+*Banfield
+-
 Ivan Arboleda
 29
 Arquero
@@ -796,9 +796,9 @@ Luciano Pons
 31
 Delantero
 2200
--
-*Patronato
 
+*Patronato
+-
 Matias Ibañez
 34
 Arquero
@@ -853,9 +853,9 @@ Junior Arias
 28
 Delantero
 2900
--
-*Lanus
 
+*Lanus
+-
 Lautaro Morales
 21
 Arquero
@@ -910,9 +910,9 @@ Lautaro Acosta
 33
 Delantero
 5000
--
-*Gimnasia y Esgrima de la Plata
 
+*Gimnasia y Esgrima de la Plata
+-
 Rodrigo Rey
 30
 Arquero
@@ -967,9 +967,9 @@ Nicolas Contin
 25
 Delantero
 2400
--
-*Talleres
 
+*Talleres
+-
 Guido Herrera
 29
 Arquero
@@ -1024,9 +1024,9 @@ Carlos Auzqui
 29
 Delantero
 3300
--
-*Defensa y Justicia
 
+*Defensa y Justicia
+-
 Ezequiel Unsain
 26
 Arquero
@@ -1081,9 +1081,9 @@ Braian Romero
 29
 Delantero
 3900
--
-*Colon
 
+*Colon
+-
 Leonardo Burian
 37
 Arquero
@@ -1138,4 +1138,3 @@ Luis Miguel Rodriguez
 37
 Delantero
 7000
--

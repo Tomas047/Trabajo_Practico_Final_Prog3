@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class ClubReal extends Club implements Serializable {
     private static final long serialVersionUID = 1L;
-    private String nombre;
+
 
 /*
     public ClubReal(String nombre, int maxJugadores, ArrayList<Jugador> listaJugadores){

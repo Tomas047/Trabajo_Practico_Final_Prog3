@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Clase que representa el equipo de futbol virtual.
@@ -15,6 +17,7 @@ public class ClubVirtual extends Club implements Serializable {
 
     public ClubVirtual(int maxJugadores){
         super(maxJugadores);
+        listaJugadores = new ArrayList<Jugador>();
     }
 
     ///Puntos --------------------------
@@ -33,6 +36,11 @@ public class ClubVirtual extends Club implements Serializable {
      */
     public void actualizarPuntos(Jugador.Propiedades p){
         puntos += p.getPuntos();
+    }
+
+    @Override
+    public String toString() {
+        return nombre +"{"+ Arrays.toString(listaJugadores.toArray())+"}";
     }
 
     @Override
